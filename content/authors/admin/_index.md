@@ -10,7 +10,7 @@ first_name: Peiwen
 last_name: Li
 
 # Status emoji
-status: DDLing
+status: 
   icon: 🪽
 
 # Is this the primary user of the site?
