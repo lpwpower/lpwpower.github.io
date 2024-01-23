@@ -1,10 +1,10 @@
 ---
 # Display name
 title: Peiwen Li
-<!--
+
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
--->
+#name_pronunciation: Chien Shiung Wu
+
 # Full name (for SEO)
 first_name: Peiwen
 last_name: Li
@@ -168,6 +168,4 @@ awards:
     summary: |
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
-
-Hi there!👋 I am currently a master student majoring in Data Science and Information Technology at TBSI, Tsinghua University. My research interests are **GNN** and **Causal**.
-(The following information is from the template, I will update it soon~😜
+Hi there!👋 I am a second-year master student majoring in Data Science and Information Technology at TBSI, Tsinghua University. I have a broad interests in **Graph Neural Networks (GNN)** and **Causal Inference**.💡 (The following information is from the template, I will update it soon~😜
