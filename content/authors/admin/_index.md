@@ -1,9 +1,9 @@
 ---
 # Display name
-title: 李霈雯
+title: Peiwen Li
 
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+%# Name pronunciation (optional)
+%name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Peiwen
