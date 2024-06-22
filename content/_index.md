@@ -75,7 +75,6 @@ sections:
   - block: collection
     content:
       title: Recent Papers
-      # text: "Here are my recent publications and manuscripts."
       filters:
         folders:
           - publication
