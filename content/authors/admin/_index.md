@@ -3,7 +3,7 @@
 title: Peiwen Li
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Peiwen
@@ -24,27 +24,27 @@ role: Chief Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
+  - name: Tsinghua University
     url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:lpw22@mails.tsinghua.edu.cn'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  # - icon: brands/x
+  #   url: https://twitter.com/GetResearchDev
+  # - icon: brands/instagram
+  #   url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/lpwpower
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/%E9%9C%88%E9%9B%AF-%E6%9D%8E-88664226b/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?hl=zh-CN&user=VUl9KFYAAAAJ
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/0009-0009-8318-2420
 
 interests:
   - Artificial Intelligence
@@ -52,60 +52,39 @@ interests:
   - Information Retrieval
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: MSc Data Science and Information Technology
+    institution: Tsinghua University
+    date_start: 2022-09-01
+    date_end: 2025-06-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      GPA: 3.93/4 (Major GPA: 4/4)
+  - area: BSc Statistics
+    institution: Minzu University of China
+    date_start: 2018-09-01
+    date_end: 2022-06-01
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 4.43/5 (94.43/100), Rank 1st
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Research Assistant
+    company_name: Multimedia and Network Big Data Lab, Tsinghua University
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2021-10-01
     date_end: ''
     summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
+      Projects include:
+      - Causal Molecular Relational Learning via GNN-LLM Co-curriculum
+      - Causal-Aware Graph Neural Architecture Search under Distribution Shifts 
+      - RealTCD: Temporal Causal Discovery from Interventional Data with Large Language Model
+      - Causal Discovery in Temporal Domain from Interventional Data
+      - Explainability in Graph Neural Architecture Search by Decorrelated Subgraph Reweighting
+  - position: Research Intern. Alibaba Innovative Research Program.
+    company_name: Alibaba Cloud, Alibaba Group
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    date_start: 2023-05-01
+    date_end: ''
+    summary: Anomaly Detection based on GNN and Causal Discovery, and applications in AIOps of data center.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
