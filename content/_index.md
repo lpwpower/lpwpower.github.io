@@ -23,8 +23,11 @@ sections:
         # Upload a cover image to `assets/media/` folder and reference its filename here (optional)
         filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'
       biography:
-        # Customize the CSS style of your biography text (optional)
-        style: ''
+        # Customize the style of your biography text
+        style: 'text-align: justify; font-size: 0.8em;'
+      spacing:
+        # Customize the section spacing. Order is top, right, bottom, left.
+        padding: ['0', '0', '2rem', '0']
   # - block: resume-biography-3
   #   content:
   #     # Choose a user profile to display (a folder name within `content/authors/`)
@@ -72,13 +75,13 @@ sections:
   - block: collection
     content:
       title: Recent Publications
-      text: ""
+      text: "Here are my recent publications."
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
-      view: card #citation
+      view: citation
   - block: collection
     id: talks
     content:
