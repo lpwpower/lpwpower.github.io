@@ -2,7 +2,7 @@
 title: 'RealTCD: Temporal Causal Discovery from Interventional Data with Large Language
   Model'
 authors:
-- Peiwen Li
+- admin
 - Xin Wang
 - Zeyang Zhang
 - Yuan Meng

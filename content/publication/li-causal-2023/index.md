@@ -1,7 +1,7 @@
 ---
 title: Causal Discovery in Temporal Domain from Interventional Data
 authors:
-- Peiwen Li
+- admin
 - Yuan Meng
 - Xin Wang
 - Fang Shen

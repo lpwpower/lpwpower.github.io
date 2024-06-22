@@ -1,7 +1,7 @@
 ---
 title: Causal-Aware Graph Neural Architecture Search under Distribution Shifts
 authors:
-- Peiwen Li
+- admin
 - Xin Wang
 - Zeyang Zhang
 - Yijian Qin
