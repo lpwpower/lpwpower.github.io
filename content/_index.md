@@ -64,7 +64,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Papers
+      title: Featured Publications
       filters:
         folders:
           - publication
@@ -74,7 +74,8 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Papers
+      title: All Publications
+      text: 'Papers are categorized by [**topic**](https://lpwpower.github.io/tags/).'
       filters:
         folders:
           - publication
