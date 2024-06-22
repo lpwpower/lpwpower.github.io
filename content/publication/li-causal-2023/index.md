@@ -26,7 +26,7 @@ url_code: 'https://github.com/lpwpower/TECDI'
 # url_slides: ''
 # url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_video: 'https://youtube.com'
-topics:
+tags:
 # - Computer Science - Artificial Intelligence
 # - Computer Science - Machine Learning
 # - Statistics - Methodology
