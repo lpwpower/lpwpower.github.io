@@ -144,5 +144,4 @@ sections:
         - Outstanding Graduate Award of Beijing (4%) 2022
         - Merit Student of Beijing (1%) 2021
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
-
 ---
