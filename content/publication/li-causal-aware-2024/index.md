@@ -41,7 +41,7 @@ abstract: 'Graph neural architecture search (Graph NAS) has emerged as a promisi
   demonstrate that our proposed CARNAS achieves advanced out-of-distribution generalization
   ability by discovering the causal relationship between graphs and architectures
   during the search process.'
-tags:
+topics:
 # - Computer Science - Artificial Intelligence
 # - Computer Science - Machine Learning
 - Graph Machine Learning
