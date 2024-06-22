@@ -71,7 +71,7 @@ work:
     company_logo: ''
     date_start: 2021-10-01
     date_end: ''
-    summary: |2-
+    summary: |
       Projects include:
       - Causal Molecular Relational Learning via GNN-LLM Co-curriculum
       - Causal-Aware Graph Neural Architecture Search under Distribution Shifts 
