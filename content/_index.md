@@ -9,46 +9,46 @@ design:
   spacing: "2rem"
 
 sections:
-  # - block: resume-biography
-  #   content:
-  #     # The user's folder name in `content/authors/`
-  #     username: admin
-  #     # Show a call-to-action button under your biography? (optional)
-  #     # To link to a file, upload it to your `static/uploads/` folder
-  #     button:
-  #       text: Download Résumé
-  #       url: uploads/resume.pdf
-  #   design:
-  #     banner:
-  #       # Upload a cover image to `assets/media/` folder and reference its filename here (optional)
-  #       filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'
-  #     biography:
-  #       # Customize the style of your biography text
-  #       style: 'text-align: justify; font-size: 0.8em;'
-  #     spacing:
-  #       # Customize the section spacing. Order is top, right, bottom, left.
-  #       padding: ['0', '0', '2rem', '0']
-  - block: resume-biography-3
+  - block: resume-biography
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
+      # The user's folder name in `content/authors/`
       username: admin
-      text: ""
       # Show a call-to-action button under your biography? (optional)
+      # To link to a file, upload it to your `static/uploads/` folder
       button:
-        text: Download CV
+        text: Download Résumé
         url: uploads/resume.pdf
     design:
-      css_class: dark
-      background:
-        color: white
-        image:
-          # Add your image background to `assets/media/`.
-          filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg #stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: actual #cover
-          position: center
-          parallax: false
+      banner:
+        # Upload a cover image to `assets/media/` folder and reference its filename here (optional)
+        filename: 'kalen-emsley-Bkci_8qcdvQ-unsplash.jpg'
+      biography:
+        # Customize the style of your biography text
+        style: 'text-align: justify; font-size: 0.8em;'
+      spacing:
+        # Customize the section spacing. Order is top, right, bottom, left.
+        padding: ['0', '0', '2rem', '0']
+  # - block: resume-biography-3
+  #   content:
+  #     # Choose a user profile to display (a folder name within `content/authors/`)
+  #     username: admin
+  #     text: ""
+  #     # Show a call-to-action button under your biography? (optional)
+  #     button:
+  #       text: Download CV
+  #       url: uploads/resume.pdf
+  #   design:
+  #     css_class: dark
+  #     background:
+  #       color: white
+  #       image:
+  #         # Add your image background to `assets/media/`.
+  #         filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg #stacked-peaks.svg
+  #         filters:
+  #           brightness: 1.0
+  #         size: actual #cover
+  #         position: center
+  #         parallax: false
   # - block: markdown
   #   content:
   #     title: '📚 My Research'
