@@ -76,7 +76,6 @@ sections:
     content:
       title: Recent Papers
       # text: "Here are my recent publications and manuscripts."
-      page_type: pubilcation
       filters:
         folders:
           - publication
