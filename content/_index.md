@@ -78,7 +78,7 @@ sections:
           - publication
         exclude_featured: false
     design:
-      view: compact #citation
+      view: card #citation
   - block: collection
     id: talks
     content:
