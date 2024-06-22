@@ -49,6 +49,16 @@ links:
 - name: URL
   url: http://arxiv.org/abs/2404.14786
 featured: true
+
+url_pdf: 'https://arxiv.org/pdf/2404.14786'
+# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_poster: ''
+# url_project: ''
+# url_slides: ''
+# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_video: 'https://youtube.com'
+
 # Summary. An optional shortened abstract.
 summary: 'RealTCD is a novel framework for temporal causal discovery in industrial scenarios, which is able to leverage domain knowledge to discover temporal causal relationships without interventional targets.'
 ---

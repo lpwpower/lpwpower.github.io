@@ -130,4 +130,15 @@ sections:
       # Education or Experience section first?
       is_education_first: false
       columns: 1
+  - block: markdown
+    id: awards
+    content:
+      title: Awards
+      # subtitle: A subtitle
+      text: |-
+        - Comprehensive Excellence Scholarship, Tsinghua SIGS 2023
+        - Outstanding Graduate Award of Beijing (4%) 2022
+        - Merit Student of Beijing (1%) 2021
+        - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
+
 ---
