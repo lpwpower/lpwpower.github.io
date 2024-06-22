@@ -25,7 +25,7 @@ sections:
   #     biography:
   #       # Customize the CSS style of your biography text (optional)
   #       style: ''
-  - block: resume-biography-2
+  - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
@@ -43,7 +43,7 @@ sections:
           filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg #stacked-peaks.svg
           filters:
             brightness: 1.0
-          size: cover
+          size: contain #cover
           position: center
           parallax: false
   - block: markdown
