@@ -3,7 +3,7 @@
 title: Peiwen Li
 
 # Name pronunciation (optional)
-# name_pronunciation: Chien Shiung Wu
+name_pronunciation: 李霈雯 #Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Peiwen
