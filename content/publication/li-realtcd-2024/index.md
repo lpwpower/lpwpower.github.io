@@ -40,11 +40,15 @@ abstract: 'In the field of Artificial Intelligence for Information Technology Op
   simulation and real-world datasets to show the superiority of our proposed RealTCD
   framework over existing baselines in discovering temporal causal structures.'
 tags:
-- Computer Science - Artificial Intelligence
-- Computer Science - Machine Learning
-- Statistics - Methodology
+# - Computer Science - Artificial Intelligence
+# - Computer Science - Machine Learning
+# - Statistics - Methodology
+- Causal Discovery
+- Large Language Model
 links:
 - name: URL
   url: http://arxiv.org/abs/2404.14786
 featured: true
+# Summary. An optional shortened abstract.
+summary: 'RealTCD is a novel framework for temporal causal discovery in industrial scenarios, which is able to leverage domain knowledge to discover temporal causal relationships without interventional targets.'
 ---

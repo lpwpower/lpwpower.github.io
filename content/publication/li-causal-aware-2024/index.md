@@ -9,7 +9,7 @@ authors:
 - Jialong Wang
 - Yang Li
 - Wenwu Zhu
-date: '2024-05-01'
+date: '2024-05-26'
 publishDate: '2024-06-22T15:43:42.309742Z'
 publication_types:
 - manuscript
@@ -42,11 +42,15 @@ abstract: 'Graph neural architecture search (Graph NAS) has emerged as a promisi
   ability by discovering the causal relationship between graphs and architectures
   during the search process.'
 tags:
-- Computer Science - Artificial Intelligence
-- Computer Science - Machine Learning
+# - Computer Science - Artificial Intelligence
+# - Computer Science - Machine Learning
+- Graph Machine Learning
 links:
 - name: URL
   url: http://arxiv.org/abs/2405.16489
 
 featured: true
+
+# Summary. An optional shortened abstract.
+summary: 'We propose to handle the distribution shifts in the graph architecture search process by discovering and exploiting the causal relationship between graphs and architectures to search for the optimal architectures that can generalize under distribution shifts.'
 ---
