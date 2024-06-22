@@ -37,13 +37,13 @@ sections:
     design:
       css_class: dark
       background:
-        color: black
+        color: white
         image:
           # Add your image background to `assets/media/`.
           filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg #stacked-peaks.svg
           filters:
             brightness: 1.0
-          size: contain #cover
+          size: actual #cover
           position: center
           parallax: false
   - block: markdown
