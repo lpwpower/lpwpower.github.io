@@ -165,4 +165,4 @@ awards:
 
 💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **Ai4Science** applications (especially in Drug Discovery and Biomedicine).
 
-😜 My chinese name is 李霈雯, and I am a dog lover. 🐕
+😜 My Chinese name is 李霈雯, and I am a dog lover. 🐕
