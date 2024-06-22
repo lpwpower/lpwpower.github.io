@@ -75,7 +75,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      # title: All Publications
+      title: All Publications
       subtitle: All Publications
       # text: 'Papers are categorized by [topic](https://github.com/lpwpower/TECDI).'
       # button: 
