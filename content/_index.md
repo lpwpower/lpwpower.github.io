@@ -65,7 +65,7 @@ sections:
     id: papers
     content:
       title: Featured Publications
-      subtitle: Featured Publications
+        subtitle: Featured Publications
       filters:
         folders:
           - publication
@@ -87,6 +87,9 @@ sections:
         exclude_featured: false
     design:
       view: citation
+      spacing:
+        # Customize the section spacing. Order is top, right, bottom, left.
+        padding: ['0', '0', '2rem', '0']
   # - block: collection
   #   id: talks
   #   content:
