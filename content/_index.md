@@ -120,7 +120,6 @@ sections:
   #     # Reduce spacing
   #     spacing:
   #       padding: [0, 0, 0, 0]
-  sections:
   - block: resume-experience
     id: experience
     content:
