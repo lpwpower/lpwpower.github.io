@@ -78,7 +78,7 @@ sections:
       # text: 'Papers are categorized by [topic](https://lpwpower.github.io/tags/).'
       button:
         text: Papers are categorized by topic.
-        url: [uploads/resume.pdf](https://lpwpower.github.io/tags/)
+        url: https://lpwpower.github.io/tags/
       filters:
         folders:
           - publication
