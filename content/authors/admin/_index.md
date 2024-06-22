@@ -52,13 +52,13 @@ interests:
   - Information Retrieval
 
 education:
-  - area: MSc Data Science and Information Technology
+  - area: MSc in Data Science and Information Technology
     institution: Tsinghua University
     date_start: 2022-09-01
     date_end: 2025-06-01
     summary: |
       GPA: 3.93/4 (Major GPA: 4/4)
-  - area: BSc Statistics
+  - area: BSc in Statistics
     institution: Minzu University of China
     date_start: 2018-09-01
     date_end: 2022-06-01
@@ -78,7 +78,7 @@ work:
       - RealTCD: Temporal Causal Discovery from Interventional Data with Large Language Model
       - Causal Discovery in Temporal Domain from Interventional Data
       - Explainability in Graph Neural Architecture Search by Decorrelated Subgraph Reweighting
-  - position: Research Intern. Alibaba Innovative Research Program.
+  - position: Research Intern of Alibaba Innovative Research Program
     company_name: Alibaba Cloud, Alibaba Group
     company_url: ''
     company_logo: ''

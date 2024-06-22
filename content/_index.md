@@ -65,7 +65,6 @@ sections:
     id: papers
     content:
       title: Featured Publications
-      subtitle: 'Featured Publications'
       filters:
         folders:
           - publication
@@ -76,7 +75,6 @@ sections:
   - block: collection
     content:
       title: All Publications
-      subtitle: All Publications
       # text: 'Papers are categorized by [topic](https://github.com/lpwpower/TECDI).'
       # button: 
       #   text: Papers are categorized by topic.
