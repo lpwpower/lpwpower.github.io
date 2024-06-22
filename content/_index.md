@@ -75,7 +75,7 @@ sections:
   - block: collection
     content:
       title: All Publications
-      text: 'Papers are categorized by [**topic**](https://lpwpower.github.io/tags/).'
+      text: 'Papers are categorized by [topic](https://lpwpower.github.io/tags/).'
       filters:
         folders:
           - publication
