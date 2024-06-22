@@ -75,7 +75,7 @@ sections:
   - block: collection
     content:
       title: All Publications
-      text: 'Papers are categorized by [topic]({{< relref "/tags/" >}}).' #[topic](https://lpwpower.github.io/tags/).'
+      text: 'Papers are categorized by [topic](https://github.com/lpwpower/TECDI).'
       # button: 
       #   text: Papers are categorized by topic.
       #   url: https://lpwpower.github.io/tags/
