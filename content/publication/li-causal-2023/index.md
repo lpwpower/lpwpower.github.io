@@ -18,6 +18,14 @@ doi: 10.1145/3583780.3615177
 links:
 - name: URL
   url: https://dl.acm.org/doi/10.1145/3583780.3615177
+url_pdf: 'https://dl.acm.org/doi/pdf/10.1145/3583780.3615177'
+url_code: 'https://github.com/lpwpower/TECDI'
+# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_poster: ''
+# url_project: ''
+# url_slides: ''
+# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_video: 'https://youtube.com'
 tags:
 # - Computer Science - Artificial Intelligence
 # - Computer Science - Machine Learning

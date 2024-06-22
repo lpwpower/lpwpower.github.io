@@ -48,6 +48,15 @@ tags:
 links:
 - name: URL
   url: http://arxiv.org/abs/2405.16489
+  
+url_pdf: 'https://arxiv.org/pdf/2405.16489'
+# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_poster: ''
+# url_project: ''
+# url_slides: ''
+# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+# url_video: 'https://youtube.com'
 
 featured: true
 
