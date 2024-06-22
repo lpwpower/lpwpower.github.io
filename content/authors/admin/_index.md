@@ -3,7 +3,7 @@
 title: Peiwen Li
 
 # Name pronunciation (optional)
-name_pronunciation: 李霈雯 #Chien Shiung Wu
+# name_pronunciation: 李霈雯 #Chien Shiung Wu
 
 # Full name (for SEO)
 first_name: Peiwen
@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Master's student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Tsinghua University
-    url: https://openai.com/
+    # url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -160,6 +160,9 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
+### Hi there! 👋 
+🎓 I am a second-year master's student at SIGS, Tsinghua University, co-advised by Prof. [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Prof. [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Prof. [Yang Li](http://yangli-feasibility.com/home/). 
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **Ai4Science** applications (especially in Drug Discovery and Biomedicine).
+
+😜 My chinese name is 李霈雯, and I am a dog lover. 🐕

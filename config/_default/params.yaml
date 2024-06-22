@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: emerald #blue
+  color: blue #emerald #blue
 
 # SEO
 marketing:
@@ -35,7 +35,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Peiwen's Personal Website"
+      text: "Peiwen's Planet 🌍"
 
 # Site footer
 footer:
