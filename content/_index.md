@@ -143,10 +143,8 @@ sections:
       title: Awards
       # subtitle: A subtitle
       text: |-
-        - [2023] Comprehensive Excellence Scholarship, Tsinghua SIGS 
-        - [2022] Outstanding Graduate Award of Beijing (4%) 
-        - [2021] Merit Student of Beijing (1%) 
-        - [2020] Meritorious Winner in Interdisciplinary Contest In Modeling
-    # design:
-    #   style: 'font-size: 0.8em;'
+        - Comprehensive Excellence Scholarship, Tsinghua SIGS 2023
+        - Outstanding Graduate Award of Beijing (4%) 2022
+        - Merit Student of Beijing (1%) 2021
+        - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
 ---
