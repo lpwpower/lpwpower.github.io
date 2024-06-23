@@ -148,3 +148,9 @@ sections:
         - Merit Student of Beijing (1%) 2021
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
 ---
+### Hi there! 👋 
+🎓 I am a second-year master's student at SIGS, Tsinghua University, co-advised by Prof. [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Prof. [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Prof. [Yang Li](http://yangli-feasibility.com/home/). 
+
+💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **Ai4Science** applications (especially in Drug Discovery and Biomedicine).
+
+😜 My Chinese name is 李霈雯, and I am a dog lover. 🐕
