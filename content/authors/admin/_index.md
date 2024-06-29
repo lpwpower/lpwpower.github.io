@@ -65,26 +65,28 @@ education:
     summary: |
       GPA: 4.43/5 (94.43/100), Rank 1st
 work:
-  - position: Research Assistant
+  - position: Research Student
     company_name: Multimedia and Network Big Data Lab, Tsinghua University
     company_url: ''
     company_logo: ''
     date_start: 2021-10-01
     date_end: ''
-    summary: |
-      Projects include:
-      - Causal Molecular Relational Learning via GNN-LLM Co-curriculum
-      - Causal-Aware Graph Neural Architecture Search under Distribution Shifts 
-      - RealTCD: Temporal Causal Discovery from Interventional Data with Large Language Model
-      - Causal Discovery in Temporal Domain from Interventional Data
-      - Explainability in Graph Neural Architecture Search by Decorrelated Subgraph Reweighting
+    summary: Graph Learning, Causal Discovery, Large Language Model, Ai4Science(Biomedicine)
+      # |
+      # Projects include:
+      # - Causal Molecular Relational Learning via GNN-LLM Co-curriculum
+      # - Causal-Aware Graph Neural Architecture Search under Distribution Shifts 
+      # - RealTCD: Temporal Causal Discovery from Interventional Data with Large Language Model
+      # - Causal Discovery in Temporal Domain from Interventional Data
+      # - Explainability in Graph Neural Architecture Search by Decorrelated Subgraph Reweighting
   - position: Research Intern of Alibaba Innovative Research Program
     company_name: Alibaba Cloud, Alibaba Group
     company_url: ''
     company_logo: ''
     date_start: 2023-05-01
     date_end: ''
-    summary: Anomaly Detection based on GNN and Causal Discovery, and applications in AIOps of data center.
+    summary: Causal Discovery and applications in AIOps of data center.
+    # Anomaly Detection based on GNN and Causal Discovery, and applications in AIOps of data center.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -163,6 +165,6 @@ awards:
 ### Hi there! 👋 
 🎓 I am a second-year master's student at SIGS, Tsinghua University, co-advised by Prof. [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Prof. [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Prof. [Yang Li](http://yangli-feasibility.com/home/). 
 
-💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **Ai4Science** applications (especially in Drug Discovery and Biomedicine).
+💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Inference**, as well as **Ai4Science** applications (especially in Drug Discovery and Biomedicine).
 
 😜 My Chinese name is 李霈雯, and I am a dog lover. 🐕
