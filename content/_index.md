@@ -17,7 +17,7 @@ sections:
       # To link to a file, upload it to your `static/uploads/` folder
       button:
         text: Download Résumé
-        url: uploads/resume.pdf
+        # url: uploads/resume.pdf
     design:
       banner:
         # Upload a cover image to `assets/media/` folder and reference its filename here (optional)
