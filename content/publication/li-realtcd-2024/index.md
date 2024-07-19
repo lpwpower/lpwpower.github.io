@@ -14,8 +14,9 @@ authors:
 date: '2024-04-23'
 publishDate: '2024-06-22T15:43:42.292396Z'
 publication_types:
-- manuscript
-publication: '*arXiv*'
+- paper-conference
+publication: '*Proceedings of the 33nd ACM International Conference on Information
+  and Knowledge Management*'
 abstract: 'In the field of Artificial Intelligence for Information Technology Operations,
   causal discovery is pivotal for operation and maintenance of graph construction,
   facilitating downstream industrial tasks such as root cause analysis. Temporal causal
