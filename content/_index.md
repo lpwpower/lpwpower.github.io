@@ -157,6 +157,4 @@ sections:
 
 💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **AI4Science** applications (especially in Drug Discovery and Biomedicine).
 
-<!-- 😜 My Chinese name is 李霈雯, and I am a dog lover. 🐕 -->
-
 #### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me~
