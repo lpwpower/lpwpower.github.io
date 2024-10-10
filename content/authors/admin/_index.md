@@ -163,8 +163,10 @@ awards:
 ---
 
 ### Hi there! 👋 
-🎓 I am a second-year master's student at Tsinghua University, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). 
+🎓 I am a third-year master's student at Tsinghua University, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). 
 
 💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Inference**, as well as **AI4Science** applications (especially in Drug Discovery and Biomedicine).
 
-😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
+<!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
+
+#### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me~
