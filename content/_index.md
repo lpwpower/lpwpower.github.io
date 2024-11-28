@@ -143,7 +143,7 @@ sections:
       title: Awards
       # subtitle: A subtitle
       text: |-
-        - Comprehensive Excellence Scholarship, Tsinghua SIGS 2023
+        - Comprehensive Excellence Scholarship, Tsinghua 2024/2023
         - Outstanding Graduate Award of Beijing (4%) 2022
         - Merit Student of Beijing (1%) 2021
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
@@ -155,6 +155,6 @@ sections:
 ### Hi there! 👋 
 🎓 I am a third-year master's student at SIGS, Tsinghua University, co-advised by Prof. [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Prof. [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Prof. [Yang Li](http://yangli-feasibility.com/home/). 
 
-💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **AI4Science** applications (especially in Drug Discovery and Biomedicine).
+💡 I have broad research interests in **Graph Machine Learning**, **Causal Inference**, their intersections with **Large Language Models**, and **AI4Science** applications (especially in Drug Combination and Biomedicine).
 
 #### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me~
