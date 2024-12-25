@@ -1,5 +1,5 @@
 ---
-title: Causal-Aware Graph Neural Architecture Search under Distribution Shifts
+title: Learning to refine domain knowledge for biological network inference
 authors:
 - admin
 - Menghua Wu
