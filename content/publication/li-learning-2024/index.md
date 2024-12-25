@@ -30,5 +30,5 @@ url_pdf: 'https://arxiv.org/pdf/2410.14436'
 featured: true
 
 # Summary. An optional shortened abstract.
-# summary: 'xxxx.'
+summary: 'We propose an amortized inference algorithm for refining domain knowledge towards biological network inference.'
 ---
