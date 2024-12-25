@@ -12,8 +12,8 @@ abstract: 'Perturbation experiments allow biologists to discover causal relation
 tags:
 # - Computer Science - Artificial Intelligence
 # - Computer Science - Machine Learning
-- Causal Discovery
 - Biology Application
+- Causal Discovery
 links:
 - name: URL
   url: https://arxiv.org/pdf/2410.14436
