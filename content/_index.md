@@ -147,6 +147,7 @@ sections:
         - Outstanding Graduate Award of Beijing (4%) 2022
         - Merit Student of Beijing (1%) 2021
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
+        - Second Prize in National Mathematics Competition for Undergraduate Students (Beijing) 2019/2020
     design:
       spacing:
         # Customize the section spacing. Order is top, right, bottom, left.
