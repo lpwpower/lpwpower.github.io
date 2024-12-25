@@ -170,7 +170,7 @@ awards:
 ---
 
 ### Hi there! 👋 
-🎓 I am a third-year master's student at Tsinghua University, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). I also have the fortune to work with [Menghua Wu](https://people.csail.mit.edu/rmwu/) in [Regina Barzilay Group](https://www.rbg.mit.edu/).
+🎓 I am a third-year master's student at Tsinghua University's Multimedia and Network Big Data Lab, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). I also have the fortune to intern at Alibaba Cloud, Alibaba Group, and work with [Menghua Wu](https://people.csail.mit.edu/rmwu/) in [Regina Barzilay Group](https://www.rbg.mit.edu/) at MIT's Computer Science and Artificial Intelligence Lab (CSAIL).
 
 💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Discovery**, as well as **AI for Biochemical and Biomedical** applications (especially in Drug Discovery and Combination).
 
