@@ -63,15 +63,15 @@ education:
     date_start: 2018-09-01
     date_end: 2022-06-01
     summary: |
-      GPA: 4.43/5 (94.43/100), Rank 1st
+      GPA: 4.43/5 (94.3/100), Rank 1st
 work:
-  - position: Research Student
+  - position: Master Research Student
     company_name: Multimedia and Network Big Data Lab, Tsinghua University
     company_url: ''
     company_logo: ''
     date_start: 2021-10-01
     date_end: ''
-    summary: Graph Learning, Causal Discovery, Large Language Model, AI4Science(Biomedicine)
+    summary: Graph Learning, Causal Discovery, Large Language Model, AI for Drug Interaction
       # |
       # Projects include:
       # - Causal Molecular Relational Learning via GNN-LLM Co-curriculum
@@ -84,7 +84,7 @@ work:
     company_url: ''
     company_logo: ''
     date_start: 2023-05-01
-    date_end: ''
+    date_end: 2023-12-01
     summary: Causal Discovery and applications in AIOps of data center.
     # Anomaly Detection based on GNN and Causal Discovery, and applications in AIOps of data center.
 
@@ -165,7 +165,7 @@ awards:
 ### Hi there! 👋 
 🎓 I am a third-year master's student at Tsinghua University, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). 
 
-💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Inference**, as well as **AI for Biochemical and Biomedical** applications (especially in Drug Dicovery and Combination).
+💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Discovery**, as well as **AI for Biochemical and Biomedical** applications (especially in Drug Discovery and Combination).
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
 
