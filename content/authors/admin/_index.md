@@ -65,6 +65,13 @@ education:
     summary: |
       GPA: 4.43/5 (94.3/100), Rank 1st
 work:
+  - position: Research Intern
+    company_name: Regina Barzilay's Group, MIT CSAIL
+    company_url: https://www.rbg.mit.edu/
+    company_logo: ''
+    date_start: 2024-05-01
+    date_end: ''
+    summary: Large scale Causal Discovery; Causal Inference for Biological Network
   - position: Master Research Student
     company_name: Multimedia and Network Big Data Lab, Tsinghua University
     company_url: ''
