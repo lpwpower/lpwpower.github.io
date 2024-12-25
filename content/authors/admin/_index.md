@@ -57,7 +57,7 @@ education:
     date_start: 2022-09-01
     date_end: 2025-06-01
     summary: |
-      GPA: 3.93/4 (Major GPA: 4/4)
+      Computer Science track; GPA: 3.93/4 (Major GPA: 4/4)
   - area: BSc in Statistics
     institution: Minzu University of China
     date_start: 2018-09-01
