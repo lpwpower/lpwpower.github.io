@@ -17,6 +17,7 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the 33nd ACM International Conference on Information
   and Knowledge Management*'
+doi: 10.1145/3627673.3680042
 abstract: 'In the field of Artificial Intelligence for Information Technology Operations,
   causal discovery is pivotal for operation and maintenance of graph construction,
   facilitating downstream industrial tasks such as root cause analysis. Temporal causal
@@ -52,7 +53,7 @@ links:
 featured: true
 
 url_pdf: 'https://arxiv.org/pdf/2404.14786'
-# url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://github.com/lpwpower/RealTCD_CIKM'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
