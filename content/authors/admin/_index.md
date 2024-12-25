@@ -67,7 +67,7 @@ education:
 work:
   - position: Research Intern
     company_name: Regina Barzilay Group, MIT CSAIL
-    company_url: [](https://www.rbg.mit.edu/)
+    company_url: https://www.rbg.mit.edu/
     company_logo: ''
     date_start: 2024-05-01
     date_end: ''
