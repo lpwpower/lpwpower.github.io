@@ -155,7 +155,7 @@ sections:
   - block: markdown
     id: services
     content:
-      title: 
+      title: ''
       # subtitle: A subtitle
       text: |-
         Professional Services: Reviewer of KDD(2024) and Pattern Recognition.
