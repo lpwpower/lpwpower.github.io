@@ -149,11 +149,9 @@ sections:
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
         - Second Prize in National Mathematics Competition for Undergraduate Students (Beijing) 2019/2020
 
-        *Misc*
+        **Misc**
 
-        Services: Reviewer of KDD(2024) and Pattern Recognition.
-
-        😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
+        Services: Reviewer of KDD(2024) and Pattern Recognition          😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
     design:
       spacing:
         # Customize the section spacing. Order is top, right, bottom, left.
