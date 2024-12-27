@@ -155,7 +155,7 @@ sections:
   - block: markdown
     id: misc
     content:
-      # title: Misc
+      title: 
       # subtitle: A subtitle
       text: |-
         Misc:
