@@ -155,9 +155,11 @@ sections:
   - block: markdown
     id: services
     content:
-      title: Professional Services
+      title: 
       # subtitle: A subtitle
-      text: Reviewer of KDD(2024) and Pattern Recognition.
+      text: |-
+    Professional Services: Reviewer of KDD(2024) and Pattern Recognition.
+    
     design:
       spacing:
         # Customize the section spacing. Order is top, right, bottom, left.
