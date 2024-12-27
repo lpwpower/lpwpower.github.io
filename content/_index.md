@@ -153,7 +153,7 @@ sections:
         # Customize the section spacing. Order is top, right, bottom, left.
         padding: ['0', '0', '0', '0']
   - block: markdown
-    id: awards
+    id: services
     content:
       title: Professional Services
       # subtitle: A subtitle
