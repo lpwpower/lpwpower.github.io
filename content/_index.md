@@ -156,10 +156,8 @@ sections:
     id: misc
     content:
       title: 
-      # subtitle: A subtitle
+      subtitle: Misc
       text: |-
-        Misc:
-    
         Services: Reviewer of KDD(2024) and Pattern Recognition.
     
         😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
