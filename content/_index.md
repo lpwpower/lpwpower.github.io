@@ -148,23 +148,14 @@ sections:
         - Merit Student of Beijing (1%) 2021
         - Meritorious Winner in Interdisciplinary Contest In Modeling 2020
         - Second Prize in National Mathematics Competition for Undergraduate Students (Beijing) 2019/2020
-    design:
-      spacing:
-        # Customize the section spacing. Order is top, right, bottom, left.
-        padding: ['0', '0', '0', '0']
-  - block: markdown
-    id: misc
-    content:
-      title: 
-      subtitle: Misc
-      text: |-
+
         Services: Reviewer of KDD(2024) and Pattern Recognition.
-    
         😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
     design:
       spacing:
         # Customize the section spacing. Order is top, right, bottom, left.
-        padding: ['-1em', '0', '-2em', '0']
+        padding: ['0', '0', '0', '0']
+  
 ---
 ### Hi there! 👋 
 🎓 I am a third-year master's student at SIGS, Tsinghua University, co-advised by Prof. [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Prof. [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Prof. [Yang Li](http://yangli-feasibility.com/home/). 
