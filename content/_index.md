@@ -159,7 +159,7 @@ sections:
       # subtitle: A subtitle
       text: |-
     Professional Services: Reviewer of KDD(2024) and Pattern Recognition.
-    
+    😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
     design:
       spacing:
         # Customize the section spacing. Order is top, right, bottom, left.
