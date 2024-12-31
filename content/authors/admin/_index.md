@@ -170,10 +170,10 @@ awards:
 ---
 
 ### Hi there! 👋 
-🎓 I am a third-year master's student at Tsinghua University's Multimedia and Network Big Data Lab, co-advised by Professor [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), Professor [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and Professor [Yang Li](http://yangli-feasibility.com/home/). I also have the fortune to intern at Alibaba Cloud, and work with [Menghua Wu](https://people.csail.mit.edu/rmwu/) in [Regina Barzilay Group](https://www.rbg.mit.edu/) at MIT's Computer Science and Artificial Intelligence Lab (CSAIL).
+🎓 I am a third-year master's student at Tsinghua University's Multimedia and Network Big Data Lab, co-advised by Professors [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and [Yang Li](http://yangli-feasibility.com/home/). I also had the opportunity to intern at Alibaba Cloud and collaborate with [Menghua Wu](https://people.csail.mit.edu/rmwu/) in [Regina Barzilay Group](https://www.rbg.mit.edu/) at MIT's Computer Science and Artificial Intelligence Lab (CSAIL).
 
-💡 I have broad research interests in the intersection of **Large Language Models** with **Graph Machine Learning** and **Causal Discovery**, as well as **AI for Biochemical and Biomedical** applications (especially in Drug Discovery and Combination).
+💡 My research interests lie at the intersection of **Large Language Models**, **Graph Machine Learning**, and **Causal Discovery**, with a focus on **AI applications in biochemistry and biomedicine**, particularly in drug discovery and combination therapies.
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
 
-#### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me~
+#### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me.
