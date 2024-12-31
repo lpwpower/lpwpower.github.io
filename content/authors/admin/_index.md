@@ -172,7 +172,7 @@ awards:
 ### Hi there! 👋 
 🎓 I am a third-year master's student at Tsinghua University's Multimedia and Network Big Data Lab, co-advised by Professors [Wenwu Zhu](https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm), [Xin Wang](https://mn.cs.tsinghua.edu.cn/xinwang/), and [Yang Li](http://yangli-feasibility.com/home/). I also had the opportunity to intern at Alibaba Cloud and collaborate with [Menghua Wu](https://people.csail.mit.edu/rmwu/) in [Regina Barzilay Group](https://www.rbg.mit.edu/) at MIT's Computer Science and Artificial Intelligence Lab (CSAIL).
 
-💡 My current research interests lie at the intersection of **Large Language Models**, **Graph Machine Learning**, and **Causal Discovery**, with a focus on **AI applications in biochemistry and biomedicine**, particularly in drug discovery and combination therapies.
+💡 My current research interests lie at the intersection of **Large Language Models**, **Graph Machine Learning** and **Causal Discovery**, with a focus on **AI applications in biochemistry and biomedicine**, particularly in drug discovery and combination therapies.
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
 
