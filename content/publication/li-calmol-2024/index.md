@@ -1,5 +1,5 @@
 ---
-title: CaLMol: Disentangled Causal Graph LLM for Molecular Relational Learning
+title: CaLMol Disentangled Causal Graph LLM for Molecular Relational Learning
 authors:
 - admin
 - Xin Wang
