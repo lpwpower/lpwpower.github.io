@@ -175,5 +175,3 @@ awards:
 💡 My current research interests lie at the intersection of **Large Language Models**, **Graph Machine Learning** and **Causal Discovery**, with a focus on **AI applications in biochemistry and biomedicine**, particularly in drug discovery and combination therapies.
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
-
-<!-- #### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me.-->
