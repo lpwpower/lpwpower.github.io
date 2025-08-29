@@ -6,7 +6,7 @@
 # Appearance
 appearance:
   mode: system
-  color: blue #emerald #blue
+  color: emerald
 
 # SEO
 marketing:
@@ -35,12 +35,12 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Peiwen's Planet 🌍"
+      text: "Your Name"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Peiwen. This work is licensed under {license}'
+    notice: '© {year} Me. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
