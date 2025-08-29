@@ -151,7 +151,7 @@ sections:
 
         **Misc**
 
-        📑 Professional Services: Reviewer: KDD(2024), Pattern Recognition.
+        📑 Professional Services: Reviewer: KDD(2024), PR, TPAMI.
         😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕
     design:
       spacing:
