@@ -176,4 +176,4 @@ awards:
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
 
-#### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me.
+<!-- #### I am actively seeking a PhD position starting in Fall 2025. If you believe I would be a good fit for your group, please feel free to contact me.-->
