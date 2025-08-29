@@ -51,19 +51,19 @@ interests:
   - Computational Linguistics
   - Information Retrieval
 
-education:
-  - area: MSc in Data Science and Information Technology
-    institution: Tsinghua University
-    date_start: 2022-09-01
-    date_end: 2025-06-01
-    summary: |
-      Computer Science track; GPA: 3.93/4 (Major GPA: 4/4)
-  - area: BSc in Statistics
-    institution: Minzu University of China
-    date_start: 2018-09-01
-    date_end: 2022-06-01
-    summary: |
-      GPA: 4.43/5 (94.3/100), Rank 1st
+# education:
+#  - area: MSc in Data Science and Information Technology
+#    institution: Tsinghua University
+#    date_start: 2022-09-01
+ #   date_end: 2025-06-01
+ #   summary: |
+ #     Computer Science track; GPA: 3.93/4 (Major GPA: 4/4)
+#  - area: BSc in Statistics
+#    institution: Minzu University of China
+#    date_start: 2018-09-01
+#    date_end: 2022-06-01
+#    summary: |
+#      GPA: 4.43/5 (94.3/100), Rank 1st
 work:
   - position: Research Intern
     company_name: Regina Barzilay Group, MIT CSAIL
@@ -175,4 +175,3 @@ awards:
 💡 My current research interests lie at the intersection of **Large Language Models**, **Graph Machine Learning** and **Causal Discovery**, with a focus on **AI applications in biochemistry and biomedicine**, particularly in drug discovery and combination therapies.
 
 <!-- 😜 My name in Chinese is 李霈雯. ( I am a dog lover. 🐕 -->
-...
