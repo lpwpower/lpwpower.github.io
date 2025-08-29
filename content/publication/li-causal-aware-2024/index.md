@@ -13,7 +13,7 @@ date: '2024-05-26'
 publishDate: '2024-06-22T15:43:42.309742Z'
 publication_types:
 - manuscript
-publication: '*Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2.*'
+publication: '*Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V. 2*'
 abstract: 'Graph neural architecture search (Graph NAS) has emerged as a promising
   approach for autonomously designing graph neural network architectures by leveraging
   the correlations between graphs and architectures. However, the existing methods
