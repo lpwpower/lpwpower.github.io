@@ -1,52 +1,55 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# lpwpower.github.io
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+Personal academic homepage of **Peiwen Li** (Ph.D. student, Yale CS).
+A single static page in a "technical drawing / blueprint" design language — no framework, no build step.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## Structure
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+```
+index.html      the entire site (HTML + CSS + a little vanilla JS)
+404.html        not-found page
+figures/        publication framework figures (local copies win over remote fallbacks)
+.nojekyll       tells GitHub Pages to serve files as-is
+content/        KEEP — inherited from the old Hugo site; index.html reads
+                publication figures and the avatar from here via relative paths
+```
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## Deploy (one-time)
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+1. In this repo, **delete the old Hugo machinery** so it stops rebuilding over the static site:
+   - `.github/workflows/` (all YAML files), `netlify.toml`, `go.mod`, `hugoblox.yaml`,
+     `config/`, `layouts/`, `publications.bib`, `package.json`
+   - **Do NOT delete `content/`** (figures + avatar live there).
+2. Copy everything in this folder into the repo root. Commit & push to `main`.
+3. GitHub → Settings → Pages → Source: **Deploy from a branch**, Branch: `main` / `/ (root)`.
+4. Visit https://lpwpower.github.io/ (allow a minute for the first build).
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+## Everyday maintenance
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+- **New paper** — copy an existing `<div class="pub">…</div>` block inside `<div class="publist">`,
+  edit title / authors / tag / links, and add `data-fa="1"` if first-author (feeds the sort toggle).
+  Add its hand-drawn fallback by copying a `<svg class="thumb">` sketch, or just let it show the figure.
+- **New figure** — drop a PNG into `figures/` and put its path first in that paper's `data-srcs`.
+  Cascade order: `figures/… | content/… (old-site copy) | remote fallback`. First one that loads wins.
+- **News** — add an `<li>` at the top of `<ol class="news">`; retire old ones into the
+  `<details class="newsarch">` drawer.
+- **Under-review paper gets accepted** — swap its `vtag` text to the venue, delete the red
+  `<span class="stamp">` and update the arXiv links if needed.
+- **Publish your CV later** — drop `assets/cv.pdf` into the repo, then add one row to the
+  sidebar `<nav class="links">`: `<a href="assets/cv.pdf" target="_blank" rel="noopener">Curriculum vitae<span class="mono">↓ 05</span></a>`.
+- **Title-block revision tag** — bump `REV B` / date in the footer title block when you feel like it. :)
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## Local preview
 
-## We ask you, humbly, to support this open source movement
+```bash
+python3 -m http.server 8000   # then open http://localhost:8000
+```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+(Opening index.html via file:// also works; remote-fallback images need network.)
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## Design notes
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
-
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
-
-## Demo image credits
-
-- [Unsplash](https://unsplash.com)
-
-## Latest news
-
-<!--START_SECTION:news-->
-
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+Palette: paper `#FCFDFE`, ink `#182838`, cobalt `#2B62A8`, teal `#177E76`, vermilion stamp `#B5482A`.
+Type: Geist + Geist Mono (Kimi's stack), Caveat (signature), Lora (italic voice).
+The page is a tracing sheet taped over graph paper: index flags on the right edge are fixed
+navigation with scroll-spy; on narrow screens they re-mount along the top edge.
