@@ -3,34 +3,34 @@
 Personal academic homepage of **Peiwen Li** (Ph.D. student, Yale CS).
 A single static page in a "technical drawing / blueprint" design language — no framework, no build step.
 
+Live at **https://lpwpower.github.io/** — GitHub Pages serves this repo as-is
+(Settings → Pages → Deploy from a branch, `main` / root).
+
 ## Structure
 
 ```
 index.html      the entire site (HTML + CSS + a little vanilla JS)
 404.html        not-found page
-figures/        publication framework figures (local copies win over remote fallbacks)
+figures/        avatar + publication figures (all images the page uses)
 .nojekyll       tells GitHub Pages to serve files as-is
-content/        KEEP — inherited from the old Hugo site; index.html reads
-                publication figures and the avatar from here via relative paths
 ```
 
-## Deploy (one-time)
+## Publishing changes
 
-1. In this repo, **delete the old Hugo machinery** so it stops rebuilding over the static site:
-   - `.github/workflows/` (all YAML files), `netlify.toml`, `go.mod`, `hugoblox.yaml`,
-     `config/`, `layouts/`, `publications.bib`, `package.json`
-   - **Do NOT delete `content/`** (figures + avatar live there).
-2. Copy everything in this folder into the repo root. Commit & push to `main`.
-3. GitHub → Settings → Pages → Source: **Deploy from a branch**, Branch: `main` / `/ (root)`.
-4. Visit https://lpwpower.github.io/ (allow a minute for the first build).
+```bash
+git add -A && git commit -m "update" && git push
+```
+
+The site refreshes a minute or so after pushing to `main`.
 
 ## Everyday maintenance
 
 - **New paper** — copy an existing `<div class="pub">…</div>` block inside `<div class="publist">`,
   edit title / authors / tag / links, and add `data-fa="1"` if first-author (feeds the sort toggle).
   Add its hand-drawn fallback by copying a `<svg class="thumb">` sketch, or just let it show the figure.
-- **New figure** — drop a PNG into `figures/` and put its path first in that paper's `data-srcs`.
-  Cascade order: `figures/… | content/… (old-site copy) | remote fallback`. First one that loads wins.
+- **New figure** — drop a PNG into `figures/` and set its path in that paper's `data-srcs`.
+  `data-srcs` accepts a `|`-separated cascade; the first source that loads wins, and if none
+  load the hand-drawn SVG sketch shows instead.
 - **News** — add an `<li>` at the top of `<ol class="news">`; retire old ones into the
   `<details class="newsarch">` drawer.
 - **Under-review paper gets accepted** — swap its `vtag` text to the venue, delete the red
