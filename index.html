@@ -112,7 +112,10 @@ section{padding:23px 0 6px; scroll-margin-top:64px}
 .shead{display:flex; align-items:baseline; gap:11px; border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:14px}
 .shead .no{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; color:var(--blue-d); font-weight:500}
 .shead h2{font-size:17px; letter-spacing:-.005em; font-weight:500}
-.shead .side{margin-left:auto; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase}
+.shead .side{margin-left:auto; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase;
+  display:flex; align-items:center; gap:7px}
+.shead .side .sg{width:14px; height:14px; display:block; opacity:.9}
+.bandsketch{position:absolute; top:13px; right:34px; width:150px; color:rgba(18,18,18,.48); pointer-events:none}
 
 .duo{display:grid; grid-template-columns:1.18fr .82fr; gap:0 44px; align-items:start}
 .duo-even{grid-template-columns:1fr 1fr}
@@ -231,6 +234,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
 @media (prefers-reduced-motion: reduce){ *{transition:none!important; animation:none!important} html{scroll-behavior:auto} }
 @media (max-width:1276px){ .sheet{margin-left:18px; margin-right:18px} }
 @media (max-width:1010px){
+  .bandsketch{display:none}
   .band .in{flex-wrap:wrap}
   .band .in > .hlinks{margin:12px 0 0; align-self:auto; flex:0 1 auto; min-width:0; display:flex; flex-wrap:wrap; justify-content:flex-start}
 }
@@ -297,6 +301,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
       <p class="htag">Building LLM agents that plan, remember, and act.</p>
       <p class="hadv">Advised by <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> &amp; <a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a> · New Haven, CT&nbsp;·&nbsp;41.31°N</p>
     </div>
+    <svg class="bandsketch" viewBox="0 0 150 80" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="52" r="1.8" fill="currentColor" stroke="none"/><ellipse cx="20" cy="52" rx="13" ry="4.6" transform="rotate(-16 20 52)"/><ellipse cx="20" cy="52" rx="13" ry="4.6" transform="rotate(56 20 52)" stroke-dasharray="2.4 2.6"/><circle cx="30.5" cy="46.5" r="1.2" fill="currentColor" stroke="none"/><path stroke="#1F7BF0" stroke-dasharray="3 3.4" d="M36 44 C 64 28, 96 24, 128 32"/><path stroke="#1F7BF0" d="M124.6 29.2 l4.2 2.6 -4.6 1.6"/><circle cx="64" cy="31.6" r="1" fill="currentColor" stroke="none"/><circle cx="97" cy="26.8" r="1" fill="currentColor" stroke="none"/><g font-family="Geist Mono,monospace" font-size="7" fill="currentColor" stroke="none"><text x="34" y="52">e&#8315;</text><text x="88" y="18">&#968;(x,t)</text></g></svg>
     <div class="hlinks">
         <a href="https://scholar.google.com/citations?user=VUl9KFYAAAAJ" target="_blank" rel="noopener">Scholar<span>↗</span></a>
         <a href="https://github.com/lpwpower" target="_blank" rel="noopener">GitHub<span>↗</span></a>
@@ -312,7 +317,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
 <section id="about">
   <div class="duo">
     <div>
-      <div class="shead"><span class="no">01</span><h2>About</h2><span class="side">GEN</span></div>
+      <div class="shead"><span class="no">01</span><h2>About</h2><span class="side"><svg class="sg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="3.6" r="1.3"/><path d="M9.4 4.8 5.6 16.6 M10.6 4.8 14.4 16.6"/><path stroke-dasharray="2 2.6" d="M4.4 17.6 A 12 12 0 0 0 15.6 17.6"/></svg>GEN</span></div>
       <p>I am a Ph.D. student at Yale CS, co-advised by Professors <b><a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a></b> and <b><a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a></b> in the <a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p>
       <p>My research interests lie at the intersection of <b>LLM agents</b>, <b>multi-agent systems</b>, and <b>efficient LLM adaptation and inference</b> (MoE, LoRA, KV cache), together with memory management and retrieval-augmented generation. Previously I worked on AutoML, OOD generalization, causal discovery, and graph learning, with applications in biochemistry and biomedicine.</p>
       <p>Before Yale, I received my Master's degree from Tsinghua University, advised by Prof. <b><a href="https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm" target="_blank" rel="noopener">Wenwu Zhu</a></b>, and was fortunate to intern with <a href="https://people.csail.mit.edu/rmwu/" target="_blank" rel="noopener">Menghua Wu</a> in the <a href="https://www.rbg.mit.edu/" target="_blank" rel="noopener">Regina Barzilay Group</a> at MIT CSAIL, and also at Alibaba Cloud under the Alibaba Innovative Research Program.</p>
@@ -364,7 +369,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
 </section>
 
 <section id="news">
-      <div class="shead"><span class="no">02</span><h2>News</h2><span class="side">LOG</span></div>
+      <div class="shead"><span class="no">02</span><h2>News</h2><span class="side"><svg class="sg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.4" cy="14.6" r="1.2" fill="currentColor" stroke="none"/><path d="M8.6 10.6 a 5.6 5.6 0 0 1 1.6 4.4 M11.6 7.6 a 9.8 9.8 0 0 1 2.6 7.2"/></svg>LOG</span></div>
       <ol class="news">
         <li><time datetime="2026-07">2026.07</time><p>Two papers accepted to KDD 2026: <a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3818131" target="_blank" rel="noopener">NumCache</a>&nbsp;and&nbsp;<a href="https://arxiv.org/pdf/2602.07294" target="_blank" rel="noopener">Fin-RATE</a>.</p></li>
         <li><time datetime="2026-05">2026.05</time><p>MoRSE is now on <a href="https://arxiv.org/abs/2608.09251" target="_blank" rel="noopener">arXiv</a> &mdash; our task-oriented multi-agent system with a mixture of role-subtask experts, specializing agents at both the task-structure and parameter levels for complex, long-horizon coding tasks.</p></li>
@@ -381,7 +386,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
 </section>
 
 <section id="publications">
-  <div class="shead"><span class="no">03</span><h2>Publications</h2><span class="side">IDX 07</span></div>
+  <div class="shead"><span class="no">03</span><h2>Publications</h2><span class="side"><svg class="sg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.4 2.8 h3.4 M10.1 2.8 v3.4 l2.5 2.7 -1.6 1.5"/><path d="M5.6 13.2 h9 M4.6 17 h11.2 M13.6 8.6 c 2 1.5 2.4 3 1.8 4.6"/><circle cx="9.2" cy="11.4" r=".9" fill="currentColor" stroke="none"/></svg>IDX 07</span></div>
   <div class="pubbar">
     <span class="pblabel">Sort by</span>
     <button type="button" class="pbtn active" data-sort="year" aria-pressed="true">Year</button>
@@ -540,7 +545,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
 <section id="experience">
   <div class="duo duo-even">
     <div>
-      <div class="shead"><span class="no">04</span><h2>Experience</h2><span class="side">REC</span></div>
+      <div class="shead"><span class="no">04</span><h2>Experience</h2><span class="side"><svg class="sg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.4 C 9 4.8, 12 4.8, 16 6.4 M4 10.4 C 9 8.8, 12 8.8, 16 10.4 M4 14.4 C 9 12.8, 12 12.8, 16 14.4"/><path d="M13.8 4.9 l2.3 1.4 -2.5 1"/></svg>REC</span></div>
       <div class="xplist">
       <div class="xp"><span class="dt">2025.08 — now</span><div><h3>Yale University · Graduate Research Assistant</h3><p><a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p><p>With Prof. <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> and Prof.&nbsp;<a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a>.</p></div></div>
       <div class="xp"><span class="dt">2024.05 — 2024.11</span><div><h3>MIT CSAIL · Research Intern</h3><p><a href="https://www.rbg.mit.edu/" target="_blank" rel="noopener">Regina Barzilay group</a>, with <a href="https://people.csail.mit.edu/rmwu/" target="_blank" rel="noopener">Menghua Wu</a>.</p><p>Amortized inference for biological&nbsp;network&nbsp;inference.</p></div></div>
@@ -549,7 +554,7 @@ p a{border-bottom:1px solid rgba(18,89,196,.25)}
       </div>
     </div>
     <div id="awards">
-      <div class="shead"><span class="no">05</span><h2>Awards &amp; service</h2><span class="side">APP</span></div>
+      <div class="shead"><span class="no">05</span><h2>Awards &amp; service</h2><span class="side"><svg class="sg" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="1.1" fill="currentColor" stroke="none"/><ellipse cx="10" cy="10" rx="7.6" ry="3"/><ellipse cx="10" cy="10" rx="7.6" ry="3" transform="rotate(64 10 10)" stroke-dasharray="2.2 2.4"/></svg>APP</span></div>
       <div class="aw"><span class="dt">23·24</span><span>Comprehensive Excellence Scholarship, Tsinghua&nbsp;University</span></div>
       <div class="aw"><time datetime="2022">2022</time><span>Outstanding Graduate Award of Beijing (top 4%)</span></div>
       <div class="aw"><time datetime="2021">2021</time><span>Merit Student of Beijing (top 1%)</span></div>
