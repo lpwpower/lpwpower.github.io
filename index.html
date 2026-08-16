@@ -6,457 +6,407 @@
 <title>Peiwen Li — Yale University</title>
 <meta name="description" content="Peiwen Li is a Ph.D. student in Computer Science at Yale University working on LLM agents: multi-agent systems, efficient LLM adaptation and inference, memory, and RAG.">
 <link rel="canonical" href="https://lpwpower.github.io/">
-<meta name="theme-color" content="#FCFDFE">
+<meta name="theme-color" content="#CDD0C8">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Peiwen Li — Yale University">
 <meta property="og:description" content="LLM agents · multi-agent systems · efficient LLM adaptation and inference.">
 <meta property="og:url" content="https://lpwpower.github.io/">
 <meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23CDD0C8'/%3E%3Cpath d='M32 12v40 M12 32h40' stroke='%23121212' stroke-width='2.5' fill='none'/%3E%3Ccircle cx='32' cy='32' r='10' stroke='%23121212' stroke-width='2.5' fill='none'/%3E%3Ccircle cx='50' cy='14' r='5' fill='%231F7BF0'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23FCFDFE'/%3E%3Cpath d='M32 10v44 M10 32h44' stroke='%232B62A8' stroke-width='3' fill='none'/%3E%3Ccircle cx='32' cy='32' r='11' stroke='%232B62A8' stroke-width='3' fill='none'/%3E%3Ccircle cx='50' cy='14' r='6' fill='%23B5482A'/%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Caveat:wght@700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500&family=Geist+Mono:wght@400;500&family=Lora:ital,wght@1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#FCFDFE; --ink:#182838; --ink-2:#486073; --ink-3:#8CA0B0;
-  --blue:#2B62A8; --blue-d:#1D4A85; --blue-wash:#E9F0F8; --blue-line:rgba(43,98,168,.5);
-  --teal:#177E76; --teal-wash:#E3F1EF;
-  --red:#B5482A;
-  --line:#D9E2E9; --line-strong:#B9C8D4;
-  --grid-minor:rgba(43,98,168,.055); --grid-major:rgba(43,98,168,.09);
+  --board:#EDEFEA; --paper:#FFFFFF; --ink:#121212; --ink-2:#4D4D4D; --ink-3:#6E736E;
+  --line:#ECECEC; --line-soft:#F3F3F1; --line-2:#E0E0E0; --edge:#C9CDC4;
+  --sage:#CDD0C8; --sage-d:#B8BDB3; --sage-wash:#F0F1EE; --sage-deep:#3A3F38;
+  --blue:#1F7BF0; --blue-d:#1259C4; --blue-wash:#EAF2FE;
   --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0; color:var(--ink); background-color:var(--paper);
+body{margin:0; color:var(--ink); background-color:var(--board);
   background-image:
-    linear-gradient(var(--grid-major) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
-    linear-gradient(var(--grid-minor) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
-  background-size:132px 132px, 132px 132px, 22px 22px, 22px 22px;
-  font-family:'Geist',-apple-system,sans-serif; font-size:14.5px; line-height:1.75; font-weight:300;
+    linear-gradient(rgba(43,98,168,.075) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43,98,168,.075) 1px, transparent 1px),
+    linear-gradient(rgba(43,98,168,.042) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43,98,168,.042) 1px, transparent 1px);
+  background-size:130px 130px, 130px 130px, 26px 26px, 26px 26px;
+  font-family:'Geist',-apple-system,sans-serif; font-size:14.5px; line-height:1.62; font-weight:300;
   -webkit-font-smoothing:antialiased}
-body::after{content:""; position:fixed; inset:0; z-index:70; pointer-events:none;
-  background-image:var(--grain); background-size:160px; mix-blend-mode:multiply; opacity:.032}
-::selection{background:rgba(43,98,168,.18)}
+body::after{content:""; position:fixed; inset:0; z-index:90; pointer-events:none;
+  background-image:var(--grain); background-size:160px; mix-blend-mode:multiply; opacity:.02}
+::selection{background:rgba(31,123,240,.16)}
 h1,h2,h3{margin:0; font-weight:500}
-a{color:var(--blue); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s,color .15s}
-a:hover{border-bottom-color:var(--blue)}
+a{color:var(--blue-d); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s,color .15s}
+a:hover{border-bottom-color:var(--blue-d)}
+a:focus-visible{outline:2px solid var(--blue); outline-offset:2px; border-radius:2px}
 .mono{font-family:'Geist Mono',ui-monospace,monospace; font-variant-numeric:tabular-nums}
 
-.frame{max-width:1400px; margin:26px auto; padding:0 24px}
-.sheet{background:rgba(252,253,254,.9); border:1.5px solid var(--ink); position:relative;
-  box-shadow:0 1px 2px rgba(24,40,56,.1), 0 20px 48px -22px rgba(24,40,56,.32), inset 0 1px 0 rgba(255,255,255,.9);
-  animation:sheetrise .55s ease-out both}
-@keyframes sheetrise{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
-.tape{position:absolute; width:94px; height:26px; z-index:4; pointer-events:none;
-  background:rgba(252,253,255,.55); border:.5px solid rgba(150,160,175,.4);
-  box-shadow:0 1px 3px rgba(24,40,56,.14), inset 0 0 8px rgba(255,255,255,.5)}
-.tp1{top:-11px; left:7%; transform:rotate(-5deg)}
-.tp2{top:-9px; right:9%; transform:rotate(3.5deg)}
-.sheet::after{content:""; position:absolute; inset:5px; border:.5px solid var(--line-strong); pointer-events:none}
-.crease{position:absolute; top:0; bottom:0; left:37%; width:18px; z-index:0; pointer-events:none;
-  background:linear-gradient(90deg, transparent, rgba(24,40,56,.03) 42%, rgba(255,255,255,.7) 50%, rgba(24,40,56,.026) 58%, transparent)}
-.zone{position:absolute; display:flex; justify-content:space-between; font-family:'Geist Mono',monospace;
-  font-size:7.5px; color:var(--ink-3); letter-spacing:.05em; z-index:2; pointer-events:none; opacity:.85}
-.zx{top:8px; left:24%; right:24%}
-.zy{flex-direction:column; top:9%; bottom:9%; left:10px; width:8px; align-items:center}
-.dwgno{position:absolute; top:15px; right:24px; font-size:8px; letter-spacing:.16em; color:var(--ink-3); margin:0; z-index:2; text-transform:uppercase}
-.dwgti{position:absolute; top:15px; left:24px; font-size:8px; letter-spacing:.16em; color:var(--ink-3); margin:0; z-index:2; text-transform:uppercase}
-.regmark{position:absolute; width:14px; height:14px; color:var(--blue); opacity:.65; z-index:2}
-.regmark svg{display:block}
-.rm1{top:-7px; left:-7px}.rm2{top:-7px; right:-7px}.rm3{bottom:-7px; left:-7px}.rm4{bottom:-7px; right:-7px}
+/* ---- fixed top bar, sits on the board ---- */
+.topbar{position:fixed; top:0; left:0; right:0; height:52px; z-index:80;
+  background:rgba(237,239,234,.82); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(58,63,56,.12)}
+.gauge{position:absolute; left:0; bottom:-1px; height:2px; width:100%; background:var(--blue);
+  transform-origin:0 50%; transform:scaleX(0); pointer-events:none}
+.topbar .in{max-width:1240px; margin:0 auto; padding:0 32px; height:100%; display:flex; align-items:center; justify-content:space-between}
+.wordmark{display:flex; align-items:center; font-family:'Geist Mono',monospace; font-size:10.5px; letter-spacing:.22em; font-weight:500; color:var(--ink); border:0}
+.tava{width:0; height:26px; border-radius:8px; object-fit:cover; flex:none; opacity:0; margin-right:0;
+  border:1px solid rgba(18,18,18,.18); filter:saturate(.5) contrast(.97) brightness(1.02);
+  transition:width .25s ease, opacity .25s ease, margin .25s ease, filter .25s ease}
+.wordmark:hover .tava{filter:none}
+.topbar.scrolled .tava{width:26px; opacity:1; margin-right:11px}
+.wordmark:hover{border:0; color:var(--ink)}
+.wordmark span{color:var(--ink-3); margin-left:.4em; white-space:pre}
+.topnav{display:flex; gap:24px}
+.topnav a{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); border:0; padding:2px 0; transition:color .15s}
+.topnav a:hover{color:var(--ink)}
+.topnav a.active{color:var(--ink); box-shadow:0 12px 0 -10px var(--ink)}
 
-.inner{position:relative; z-index:1; padding:58px 56px 0;
-  display:grid; grid-template-columns:256px 1fr; gap:64px; align-items:start}
+/* ---- the sheet ---- */
+.sheet{max-width:1240px; margin:76px auto 14px; background:var(--paper);
+  border:1px solid var(--edge); border-radius:3px; position:relative;
+  box-shadow:0 1px 2px rgba(40,45,38,.08), 0 26px 60px -32px rgba(40,45,38,.38)}
+.pad{padding:0 40px}
 
-.sidebar{position:sticky; top:32px}
-.plate{border:1px solid var(--ink); background:#fff}
-.plate .ph{aspect-ratio:4/5; background:linear-gradient(165deg,#EFF4F6,#E2ECEE); display:flex; align-items:center; justify-content:center; color:var(--ink-3); border-bottom:1px solid var(--ink); position:relative}
-.plate .ph svg{width:44px; height:44px; opacity:.5}
-.plate .ph .ref{position:absolute; top:6px; left:8px; font-family:'Geist Mono',monospace; font-size:8px; letter-spacing:.14em; color:var(--ink-3)}
-.spec{width:100%; border-collapse:collapse; font-size:11px}
-.spec td{border-top:.5px solid var(--line-strong); padding:5px 9px; font-family:'Geist Mono',monospace; letter-spacing:.04em}
-.spec tr:first-child td{border-top:0}
-.spec td:first-child{width:56px; color:var(--ink-3); text-transform:uppercase; font-size:9.5px; letter-spacing:.12em; border-right:.5px solid var(--line-strong)}
-.spec td:last-child{color:var(--ink)}
-.name{font-family:'Caveat',cursive; font-weight:700; font-size:44px; line-height:1; margin:20px 0 6px; letter-spacing:.01em}
-.sig{font-family:'Lora',Georgia,serif; font-style:italic; font-size:13.5px; color:var(--ink-2); line-height:1.8; margin:0}
-.sig a{color:var(--ink-2); border-bottom:1px solid var(--line); font-style:italic}
-.sig a:hover{color:var(--blue); border-color:var(--blue)}
-.sig.adv{margin-top:5px; font-size:13px; white-space:nowrap}
-.links{margin-top:16px; border:1px solid var(--line-strong); background:#fff}
-.links a{display:flex; justify-content:space-between; align-items:center; padding:7px 11px;
-  font-size:12.5px; font-weight:400; color:var(--ink-2); border:0; border-top:.5px solid var(--line)}
-.links a:first-child{border-top:0}
-.links a span.mono{font-size:9px; color:var(--ink-3); letter-spacing:.08em}
-.links a:hover{color:var(--blue); background:var(--blue-wash)}
+/* ---- letterhead band ---- */
+.band{background:linear-gradient(180deg,#D4D7CF 0%,#CBCEC5 100%); position:relative; overflow:hidden;
+  border-radius:2px 2px 0 0; border-bottom:1px solid rgba(18,18,18,.14)}
+.band::after{content:""; position:absolute; left:0; right:0; bottom:0; height:7px; pointer-events:none; opacity:.5;
+  background-image:repeating-linear-gradient(90deg, rgba(30,70,110,.55) 0 1px, transparent 1px 10px),
+    repeating-linear-gradient(90deg, rgba(30,70,110,.55) 0 1px, transparent 1px 50px);
+  background-size:auto 4px, auto 7px; background-repeat:repeat-x; background-position:bottom left}
+.band::before{content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(rgba(43,98,168,.085) 1px, transparent 1px),linear-gradient(90deg, rgba(43,98,168,.085) 1px, transparent 1px);
+  background-size:78px 78px; mask-image:linear-gradient(180deg, transparent, #000 40%); -webkit-mask-image:linear-gradient(180deg, transparent, #000 40%)}
+.band .in{position:relative; display:flex; gap:26px; align-items:center; padding:28px 40px 26px}
+.hava{width:128px; height:128px; border-radius:18px; object-fit:cover; display:block; flex:none;
+  border:1px solid rgba(18,18,18,.22); filter:saturate(.82) contrast(.98);
+  box-shadow:0 10px 24px -12px rgba(30,35,28,.5)}
+.hkick{font-family:'Geist Mono',monospace; font-size:clamp(7.5px,1.05vw,9.5px); letter-spacing:.18em; white-space:nowrap; text-transform:uppercase; color:rgba(18,18,18,.66); margin:0 0 10px}
+.hname{font-size:40px; font-weight:200; letter-spacing:-.02em; line-height:1.05; color:var(--ink)}
+.htag{font-family:'Lora',Georgia,serif; font-style:italic; font-size:15px; text-wrap:balance; color:var(--sage-deep); margin:14px 0 1px; line-height:1.5}
+.hadv{font-size:12.5px; color:rgba(18,18,18,.68); margin:0}
+.hadv a{color:rgba(18,18,18,.88); border-bottom:1px solid rgba(18,18,18,.25)}
+.hadv a:hover{color:var(--blue-d); border-color:var(--blue-d)}
+.hlinks{display:flex; flex-wrap:wrap; gap:8px}
+.hlinks a,a.em{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ink); background:rgba(255,255,255,.55); border:1px solid rgba(18,18,18,.18); border-radius:100px;
+  padding:4.5px 12px; transition:background .15s, border-color .15s, color .15s}
+.hlinks a:hover,a.em:hover{background:#fff; border-color:rgba(18,18,18,.4)}
+.hlinks a span{color:var(--ink-3); margin-left:6px}
+.band .in > .hmain{flex:1; min-width:0}
+a.em{text-transform:none; letter-spacing:.06em; font-size:9.5px}
+.band .in > .hlinks{margin-left:auto; align-self:flex-end; flex:none; padding-bottom:3px;
+  display:grid; grid-template-columns:repeat(4,auto); gap:8px; justify-items:end}
+.hlinks a.em{grid-column:1 / -1}
+.hcard.aboutcard{width:min(320px,100%); margin:0 auto; align-self:center}
 
-main{min-width:0}
-section{margin:0 0 50px; position:relative}
-.flagdex{position:fixed; left:calc(min(50% + 676px, 100% - 24px) - 16px); top:15vh; z-index:65; display:flex; flex-direction:column; align-items:flex-start}
-.flagdex a{position:relative; font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.09em;
-  text-transform:uppercase; font-weight:500; white-space:nowrap; border-bottom:0;
-  padding:4px 9px 4.5px 24px; border-radius:0 3px 3px 0;
-  border:.5px solid; border-left:0;
-  box-shadow:0 1.5px 2.5px rgba(24,40,56,.14);
-  transform:translateX(var(--tx,0)) rotate(var(--rot,0deg));
-  transition:transform .18s ease, filter .18s}
-.flagdex a.fb{color:var(--blue-d); border-color:rgba(43,98,168,.35);
-  background:linear-gradient(90deg, rgba(43,98,168,.09) 0 16px, rgba(43,98,168,.28) 16px);
-  box-shadow:0 1.5px 2.5px rgba(24,40,56,.14), inset 0 -1px 0 rgba(43,98,168,.3)}
-.flagdex a.ft{color:var(--teal); border-color:rgba(23,126,118,.33);
-  background:linear-gradient(90deg, rgba(23,126,118,.08) 0 16px, rgba(23,126,118,.25) 16px);
-  box-shadow:0 1.5px 2.5px rgba(24,40,56,.14), inset 0 -1px 0 rgba(23,126,118,.3)}
-.flagdex a:hover{--tx:4px; filter:saturate(1.2) brightness(1.02); border-bottom:0; border-left:0}
-.flagdex a:active{--tx:1px}
-.flagdex a.active{--tx:6px; filter:saturate(1.35)}
-.flagdex a:nth-child(1){--rot:-.4deg; margin-bottom:9px}
-.flagdex a:nth-child(2){--rot:.3deg; margin-bottom:15px}
-.flagdex a:nth-child(3){--rot:-.25deg; margin-bottom:8px}
-.flagdex a:nth-child(4){--rot:.4deg; margin-bottom:13px}
-.flagdex a:nth-child(5){--rot:-.3deg}
-.edgebar{display:none; position:fixed; top:0; left:50%; transform:translateX(-50%);
-  width:calc(min(1400px, 100vw) - 48px); height:44px; z-index:60; pointer-events:none;
-  background:var(--paper); border:1.5px solid var(--ink); border-bottom:0;
-  box-shadow:0 1px 2px rgba(24,40,56,.1)}
-.edgebar::before{content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:var(--line-strong)}
-.edgebar::after{content:""; position:absolute; left:5px; right:5px; top:5px; bottom:0; border:.5px solid var(--line-strong); border-bottom:0}
-.shead{display:flex; align-items:baseline; gap:12px}
-.shead .no{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; color:var(--blue); font-weight:500}
-.shead h2{font-size:15px; letter-spacing:.09em; text-transform:uppercase}
-.shead .side{margin-left:auto; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.12em; color:var(--ink-3); text-transform:uppercase}
-.hrule{height:4px; border-top:1.5px solid var(--ink); border-bottom:.5px solid var(--line-strong); margin:7px 0 20px}
 
-.bio-grid{display:grid; grid-template-columns:minmax(300px,1.2fr) minmax(230px,1fr); gap:36px; align-items:start}
-.lede{font-size:16px; line-height:1.72; max-width:56ch; margin:0 0 12px; color:var(--ink); font-weight:400}
-.lede b{font-weight:500; background:linear-gradient(transparent 62%, rgba(43,98,168,.16) 62%, rgba(43,98,168,.16) 90%, transparent 90%)}
-p{max-width:66ch; color:var(--ink-2); margin:0 0 12px}
+/* ---- sections ---- */
+main{display:block}
+section{padding:23px 0 6px; scroll-margin-top:64px}
+#news,#awards{scroll-margin-top:64px}
+.shead{display:flex; align-items:baseline; gap:11px; border-bottom:1px solid var(--line); padding-bottom:8px; margin-bottom:14px}
+.shead .no{font-family:'Geist Mono',monospace; font-size:10px; letter-spacing:.14em; color:var(--blue-d); font-weight:500}
+.shead h2{font-size:17px; letter-spacing:-.005em; font-weight:500}
+.shead .side{margin-left:auto; font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase}
+
+.duo{display:grid; grid-template-columns:1.18fr .82fr; gap:0 44px; align-items:start}
+.duo-even{grid-template-columns:1fr 1fr}
+p{max-width:68ch; color:var(--ink-2); margin:0 0 11px; text-wrap:pretty}
+#about p{max-width:94ch}
 p b{font-weight:500; color:var(--ink)}
-.figure{margin:0; border:1px solid var(--line-strong); padding:14px 12px 10px; position:relative;
+p a{border-bottom:1px solid rgba(18,89,196,.25)}
+
+/* Fig. 1 card */
+.hcard{border:1px solid var(--line-2); border-radius:14px; padding:16px 16px 10px; margin:0 0 22px;
   background-color:#fff;
-  background-image:linear-gradient(rgba(43,98,168,.05) .5px, transparent .5px),linear-gradient(90deg, rgba(43,98,168,.05) .5px, transparent .5px);
-  background-size:11px 11px}
-.figure .fkey{position:absolute; top:7px; right:9px; font-family:'Geist Mono',monospace; font-size:8px; letter-spacing:.13em; color:var(--ink-3)}
-.figure svg{width:100%; max-width:270px; color:var(--ink); display:block; margin:0 auto}
-.figure figcaption{font-family:'Lora',Georgia,serif; font-style:italic; font-size:12.5px; color:var(--ink-2); margin-top:8px; text-align:center}
-.figure .plate-no{display:block; font-family:'Geist Mono',monospace; font-style:normal; font-size:8.5px; letter-spacing:.16em; color:var(--ink-3); margin-top:4px; text-align:center; text-transform:uppercase}
+  background-image:linear-gradient(rgba(43,98,168,.05) 1px, transparent 1px),linear-gradient(90deg, rgba(43,98,168,.05) 1px, transparent 1px);
+  background-size:9px 9px;
+  box-shadow:0 14px 30px -22px rgba(30,35,28,.35)}
+.hcard svg{width:100%; display:block; color:#27567F}
+.hcap{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-top:8px; padding-top:8px; border-top:1px solid var(--line)}
+.hcap em{font-family:'Lora',Georgia,serif; font-size:12px; color:var(--ink-2)}
+.hcap span{font-family:'Geist Mono',monospace; font-size:8px; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase; white-space:nowrap}
+.hcard.bandcard{margin:0 0 0 auto; width:264px; flex:none; padding:12px 12px 8px;
+  box-shadow:0 14px 30px -18px rgba(30,35,28,.45); border-color:rgba(18,18,18,.14)}
+.bandcard .hcap{margin-top:6px; padding-top:6px}
+.bandcard .hcap em{font-size:10.5px}
 
 .news{list-style:none; padding:0; margin:0}
-.news li{display:grid; grid-template-columns:84px 1fr; gap:16px; padding:8.5px 0; align-items:baseline; border-bottom:.5px solid var(--line)}
+.news li{display:grid; grid-template-columns:64px 1fr; gap:12px; padding:6.5px 0; align-items:baseline; border-bottom:1px solid var(--line-soft,#F3F3F1)}
 .news li:last-child{border:0}
-.news time{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--ink-3); letter-spacing:.03em}
-.news p{margin:0; font-size:14px; max-width:none}
-
-.newsarch{margin-top:2px}
-.newsarch summary{font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.13em; text-transform:uppercase;
-  color:var(--ink-3); cursor:pointer; list-style:none; padding:9px 0 3px; user-select:none}
+.news time,.xp time,.xp .dt,.aw time,.aw .dt{font-variant-numeric:tabular-nums}
+.news time{font-family:'Geist Mono',monospace; font-size:10px; color:var(--ink-3); letter-spacing:.03em}
+.news p{margin:0; font-size:13.5px; max-width:none}
+.newsarch{margin-top:0}
+.newsarch summary{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); cursor:pointer; list-style:none; padding:8px 0 2px; user-select:none}
 .newsarch summary::-webkit-details-marker{display:none}
-.newsarch summary:hover{color:var(--blue)}
+.newsarch summary:hover{color:var(--ink)}
 .newsarch[open] summary span{display:inline-block; transform:rotate(45deg)}
-.newsarch .news li:first-child{border-top:.5px solid var(--line-soft)}
-.pubbar{display:flex; align-items:center; gap:9px; margin:-14px 0 14px}
-.pblabel{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3); margin-right:3px}
-.pbtn{font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.08em; padding:4px 15px 5px; cursor:pointer;
-  border:0; color:var(--ink-2); transition:background .15s, color .15s;
-  background:linear-gradient(180deg, rgba(24,40,56,.08), rgba(24,40,56,.04));
-  clip-path:polygon(0 0, 100% 0, 93% 100%, 7% 100%);
-  filter:drop-shadow(0 1.5px 1px rgba(24,40,56,.15))}
-.pbtn:hover{background:linear-gradient(180deg, rgba(43,98,168,.14), rgba(43,98,168,.08)); color:var(--blue-d)}
-.pbtn:active{transform:translateY(1px)}
-.pbtn.active{background:linear-gradient(180deg, rgba(43,98,168,.26), rgba(43,98,168,.15)); color:var(--blue-d)}
-.pball{margin-left:auto; font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.08em; color:var(--ink-2); border-bottom:0; text-transform:uppercase}
-.pball:hover{color:var(--blue); border-bottom:0}
-.pub{display:grid; grid-template-columns:188px 1fr; gap:20px; padding:16px 8px 15px 0; border-bottom:.5px solid var(--line); align-items:start; transition:background .2s}
-.pub:hover{background:linear-gradient(90deg, rgba(43,98,168,.04), transparent 72%)}
-.pub:last-child{border:0}
-.thumb{width:188px; height:122px; color:var(--ink); padding:8px; position:relative; margin-top:3px;
-  border:1px solid var(--line-strong); background-color:#fff;
-  background-image:linear-gradient(rgba(43,98,168,.045) .5px, transparent .5px),linear-gradient(90deg, rgba(43,98,168,.045) .5px, transparent .5px);
-  background-size:11px 11px}
-.thumb > svg{display:block; height:100%; width:100%}
-.thumb .fno{position:absolute; bottom:2px; right:5px; font-family:'Geist Mono',monospace; font-size:7.5px; letter-spacing:.1em; color:var(--ink-3); z-index:2; background:rgba(255,255,255,.85); padding:0 2px}
-.thumb .figimg{position:absolute; inset:8px; width:calc(100% - 16px); height:calc(100% - 16px); object-fit:contain; background:#fff; z-index:1; display:none}
-.ph .figimg{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:none; z-index:1}
-.pub:hover .thumb{border-color:var(--blue); box-shadow:0 4px 12px -5px rgba(24,40,56,.28)}
-.thumb{transition:border-color .2s, box-shadow .2s}
-.pub h3{font-size:15px; line-height:1.5; margin:0 0 5px; font-weight:500}
-.pub .au{font-size:12.5px; color:var(--ink-2); margin:0 0 7px; line-height:1.7; font-weight:300; max-width:none}
-.pub .au u{text-decoration:none; border-bottom:1.5px solid var(--teal); color:var(--ink); padding-bottom:.5px; font-weight:400}
-.pub .meta{display:flex; gap:10px; align-items:center; flex-wrap:wrap; font-size:12px; color:var(--ink-3)}
-.vtag{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.08em; color:var(--blue-d); padding:3px 9px; font-weight:500;
-  background:rgba(43,98,168,.12); border:.5px solid rgba(43,98,168,.28); border-radius:2px}
-.stamp{font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.16em; text-transform:uppercase;
-  color:var(--red); border:1.5px solid currentColor; outline:1px solid currentColor; outline-offset:2px;
-  padding:2.5px 9px; border-radius:2px; transform:rotate(-2deg); display:inline-block; opacity:.82; font-weight:500; margin:2px 6px 2px 4px; vertical-align:1px;
-  background:radial-gradient(ellipse at 28% 68%, rgba(181,72,42,.12), transparent 55%)}
-.news li{transition:background .2s}
-.news li:hover{background:linear-gradient(90deg, rgba(43,98,168,.03), transparent 70%)}
+
+/* publications */
+.pubbar{display:flex; align-items:center; gap:14px; margin:-2px 0 4px}
+.pblabel{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+.pbtn{font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; padding:3px 0;
+  border:0; background:none; cursor:pointer; color:var(--ink-3); transition:color .15s; border-bottom:1.5px solid transparent}
+.pbtn:hover{color:var(--ink)}
+.pbtn.active{color:var(--ink); border-bottom-color:var(--blue)}
+.pball{margin-left:auto; font-family:'Geist Mono',monospace; font-size:9.5px; letter-spacing:.1em; color:var(--ink-2); border:0; text-transform:uppercase}
+.pball:hover{color:var(--blue-d)}
 
 .publist{display:grid; grid-template-columns:1fr}
-.publist .pub:last-child{border-bottom:0}
-.xplist{display:grid; grid-template-columns:1fr}
-.xplist .xp:last-child{border-bottom:0}
-.xp{display:grid; grid-template-columns:132px 1fr; gap:16px; padding:10px 0; border-bottom:.5px solid var(--line)}
-.xp:last-child{border:0}
-.xp time{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--ink-3); letter-spacing:.02em; padding-top:3px}
-.xp h3{font-size:14px; font-weight:500}
-.xp p{font-size:13px; margin:2px 0 0; max-width:none}
+.pub{display:grid; grid-template-columns:148px 1fr; gap:16px; padding:9px 0; border-bottom:1px solid var(--line-soft); align-items:start; transition:background .2s}
+.pub:last-child{border-bottom:0}
+.pub:hover{background:linear-gradient(90deg, rgba(205,208,200,.16), transparent 70%)}
+.thumb{width:148px; height:96px; border:1px solid var(--line-2); border-radius:10px; overflow:hidden;
+  background-color:var(--sage-wash); position:relative; color:#2E5E8C;
+  background-image:linear-gradient(rgba(43,98,168,.045) 1px, transparent 1px),linear-gradient(90deg, rgba(43,98,168,.045) 1px, transparent 1px);
+  background-size:9px 9px; padding:8px; transition:border-color .2s, background .3s}
+.thumb > svg{display:block; height:100%; width:100%}
+.thumb .fno{position:absolute; bottom:4px; right:8px; font-family:'Geist Mono',monospace; font-size:7.5px; letter-spacing:.1em; color:var(--ink-3); z-index:3}
+.thumb .figimg{position:absolute; inset:8px; width:calc(100% - 16px); height:calc(100% - 16px); object-fit:contain; z-index:1; display:none;
+  filter:saturate(.92) contrast(.99); transition:filter .25s}
+.thumb.has-img{background-color:#fff}
+.thumb.has-img > svg{display:none}
+.thumb.has-img::after{content:""; position:absolute; inset:0; background:rgba(240,241,238,.22); z-index:2; pointer-events:none; transition:opacity .25s}
+.thumb.has-img .fno{background:rgba(255,255,255,.85); padding:0 3px; border-radius:3px}
+.pub:hover .thumb{border-color:var(--sage-d); background:#fff}
+.pub:hover .thumb.has-img::after{opacity:0}
+.pub:hover .thumb .figimg{filter:none}
+.pub h3{font-size:14.5px; line-height:1.45; margin:0 0 5px; font-weight:500; text-wrap:balance}
+.pub .au{font-size:12.5px; color:var(--ink-2); margin:0 0 8px; line-height:1.7; font-weight:300; max-width:none; text-wrap:pretty}
+.pub .au u{text-decoration:none; border-bottom:1.5px solid var(--blue); color:var(--ink); padding-bottom:.5px; font-weight:400}
+.lks{white-space:nowrap; display:inline-flex; gap:9px; align-items:center}
+.pub .meta{display:flex; gap:7px 10px; align-items:center; flex-wrap:wrap; font-size:12px; color:var(--ink-3)}
+.vtag{font-family:'Geist Mono',monospace; font-size:9px; letter-spacing:.08em; color:var(--ink-2); padding:3px 10px; font-weight:500;
+  background:var(--sage-wash); border:1px solid var(--line-2); border-radius:100px; white-space:nowrap}
+.stamp{font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--ink-3); border:1px dashed #C4C8C0; padding:2.5px 10px; border-radius:100px; display:inline-block; font-weight:400}
 
-.two{display:grid; grid-template-columns:1fr 1fr; gap:0 44px}
-.aw{display:grid; grid-template-columns:44px 1fr; gap:12px; padding:7px 0; border-bottom:.5px solid var(--line); align-items:baseline}
-.aw time{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--ink-3)}
-.aw span{font-size:13px; color:var(--ink-2)}
-.svc{font-size:13px; color:var(--ink-2); margin:0 0 10px}
+.platestrip{margin:10px 0 0; display:flex; align-items:center; justify-content:flex-end; gap:14px}
+.pslabel{font-family:'Geist Mono',monospace; font-size:8px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3)}
+.psrow{display:flex; gap:8px}
+.psrow span,.psrow button{appearance:none; -webkit-appearance:none; width:30px; height:30px; padding:4px; background:#fff; border:1px solid var(--line);
+  border-radius:8px; color:#2E5E8C; opacity:.6; cursor:pointer; transition:opacity .15s, border-color .15s}
+.psrow span:hover,.psrow button:hover{opacity:1; border-color:var(--sage-d)}
+.psrow button:focus-visible{outline:2px solid var(--blue); outline-offset:2px; opacity:1}
+.psrow svg{width:100%; height:100%; display:block}
+
+/* experience + awards */
+.xplist{display:grid; grid-template-columns:1fr}
+.xp{display:grid; grid-template-columns:106px 1fr; gap:14px; padding:7.5px 0; border-bottom:1px solid var(--line-soft)}
+.xp:last-child{border:0}
+.xp time,.xp .dt{font-family:'Geist Mono',monospace; font-size:10px; color:var(--ink-3); letter-spacing:.02em; padding-top:3px}
+.xp h3{font-size:13.5px; font-weight:500}
+.xp p{font-size:12.5px; margin:1px 0 0; max-width:none; line-height:1.5}
+.xp p a, #about p a{white-space:nowrap}
+
+.aw{display:grid; grid-template-columns:44px 1fr; gap:11px; padding:6px 0; border-bottom:1px solid var(--line-soft); align-items:baseline}
+.aw:last-child{border:0}
+.aw time,.aw .dt{font-family:'Geist Mono',monospace; font-size:10px; color:var(--ink-3)}
+.aw span{font-size:12.5px; color:var(--ink-2); text-wrap:pretty}
+.svcbox{margin-top:16px}
+.svc{font-size:12.5px; color:var(--ink-2); margin:0 0 7px; max-width:none}
 .svc b{font-weight:500; color:var(--ink)}
 
-.platestrip{margin:22px 0 0; display:flex; align-items:center; justify-content:flex-end; gap:14px; position:relative; z-index:1}
-.pslabel{font-family:'Geist Mono',monospace; font-size:8px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3)}
-.psrow{display:flex; gap:9px}
-.psrow span{width:32px; height:32px; padding:3px; background:#fff; border:.5px solid var(--line);
-  color:var(--ink); opacity:.66; cursor:pointer; transition:opacity .15s, border-color .15s}
-.psrow span:hover{opacity:1; border-color:var(--blue)}
-.psrow svg{width:100%; height:100%; display:block}
-.titleblock{margin:26px 54px 0; border:1.5px solid var(--ink); background:#fff;
-  display:grid; grid-template-columns:2fr 1fr .9fr .9fr 1.2fr .9fr; position:relative; z-index:1}
-.tb.bc svg{display:block; height:11px; width:100%; color:var(--ink); margin-top:1px}
-.ctest{display:flex; gap:2px; margin:2px 0 3px}
-.ctest i{width:12px; height:5px; display:block}
-.tb{padding:8px 12px 9px; border-left:1px solid var(--ink)}
-.tb:first-child{border-left:0}
+/* ---- in-sheet title block ---- */
+.titleblock{margin:30px 40px 0; border-top:1.5px solid #27567F}
+.tb-grid{display:grid; grid-template-columns:2fr 1fr .9fr .9fr minmax(max-content,1.2fr) .9fr}
+.tb{padding:10px 14px 12px; border-left:1px solid var(--line)}
+.tb:first-child{border-left:0; padding-left:0}
 .tb .k{display:block; font-family:'Geist Mono',monospace; font-size:7.5px; letter-spacing:.16em; color:var(--ink-3); text-transform:uppercase; margin-bottom:2px}
-.tb .v{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--ink); letter-spacing:.04em}
-.sheetfoot{height:34px}
+.tb .v{font-family:'Geist Mono',monospace; font-size:10.5px; color:var(--ink); letter-spacing:.04em; white-space:nowrap}
+.ctest{display:flex; gap:3px; margin:6px 0 0}
+.ctest i{width:13px; height:6px; display:block; border-radius:2px}
+.sheetfoot{height:18px}
 
-@media (prefers-reduced-motion: reduce){
-  .sheet{animation:none}
-  .flagdex a,.pbtn,.thumb{transition:none}
+.footnote{max-width:1240px; margin:0 auto; padding:0 32px 30px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  font-family:'Geist Mono',monospace; font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; color:rgba(58,63,56,.55)}
+
+@media (prefers-reduced-motion: reduce){ *{transition:none!important; animation:none!important} html{scroll-behavior:auto} }
+@media (max-width:1276px){ .sheet{margin-left:18px; margin-right:18px} }
+@media (max-width:1010px){
+  .band .in{flex-wrap:wrap}
+  .band .in > .hlinks{margin:12px 0 0; align-self:auto; display:flex; flex-wrap:wrap; justify-content:flex-start}
 }
-@media (max-width:1460px){
-  .flagdex{position:fixed; left:auto; right:46px; top:10px; flex-direction:row; align-items:flex-end; gap:7px}
-  .flagdex a{padding:4px 11px 14px; border-radius:3px 3px 0 0; border:.5px solid; border-bottom:0; margin:0 !important;
-    transform:translateY(var(--tyn,0)) rotate(var(--rot,0deg)); box-shadow:0 -1px 2px rgba(24,40,56,.07)}
-  .flagdex a.fb{background:linear-gradient(180deg, rgba(43,98,168,.28) 0 15px, rgba(43,98,168,.09) 15px); border-color:rgba(43,98,168,.35)}
-  .flagdex a.ft{background:linear-gradient(180deg, rgba(23,126,118,.25) 0 15px, rgba(23,126,118,.08) 15px); border-color:rgba(23,126,118,.33)}
-  .flagdex a:hover{--tyn:-3px}
-  .flagdex a.active{--tyn:-5px}
-  .tp2{display:none}
-  .edgebar.on{display:block}
+@media (max-width:980px){
+  .duo{grid-template-columns:1fr; gap:0}
+  .duo > * + *{margin-top:26px}
+  .hcard.aboutcard{width:min(360px,100%); margin:26px auto 0}
 }
 @media (max-width:700px){
-  .flagdex{left:0; right:0; top:0; justify-content:center; gap:4px; padding:0 6px}
-  .flagdex a{font-size:8px; letter-spacing:.04em; padding:3px 7px 11px; white-space:nowrap}
-  .edgebar{height:34px}
-}
-@media (max-width:900px), (orientation:portrait) and (max-width:1100px){
-  .inner{grid-template-columns:1fr; gap:36px; padding:34px 24px 0}
-  .publist,.xplist{grid-template-columns:1fr}
-  .pub{grid-template-columns:136px 1fr; gap:13px}
-  .thumb{width:136px; height:92px}
-  .sidebar{position:static; display:grid; grid-template-columns:170px 1fr; gap:20px; align-items:start}
-  .plate{max-width:170px}
-  .name{margin-top:0}
-  .bio-grid{grid-template-columns:1fr}
-  .figure{max-width:300px; margin:8px auto 0}
-  .two{grid-template-columns:1fr}
-  .platestrip{display:none}
-  .titleblock{margin:26px 24px 0; grid-template-columns:1fr 1fr; }
-  .tb{border-top:1px solid var(--ink)}
-}
-@media (max-width:560px){
-  .frame{margin:12px auto; padding:0 10px}
-  .edgebar{width:calc(100vw - 20px)}
-  .inner{padding:24px 16px 0; gap:28px}
-  .sidebar{grid-template-columns:1fr; gap:14px}
-  .plate{max-width:216px}
-  .name{font-size:38px}
-  .pub{grid-template-columns:1fr; gap:10px; padding:14px 0 13px}
-  .thumb{width:100%; height:150px}
+  .sheet{margin:64px 10px 12px}
+  .pad{padding:0 20px}
+  .titleblock{margin:24px 20px 0}
+  .topbar .in{padding:0 16px; justify-content:center}
+  .wordmark{display:none}
+  .topnav{gap:15px}
+  .topnav a{font-size:9px; letter-spacing:.1em}
+  section{padding:22px 0 6px}
+  .band .in{gap:16px; padding:20px 20px 18px; align-items:flex-start}
+  .hava{width:84px; height:84px; border-radius:14px; margin-top:3px}
+  .hname{font-size:30px}
+  .hkick{font-size:8.5px; letter-spacing:.12em}
+  .bandcard{display:none}
+  .pub{grid-template-columns:88px 1fr; gap:12px}
+  .thumb{width:88px; height:64px; padding:5px}
+  .thumb .figimg{inset:4px; width:calc(100% - 8px); height:calc(100% - 8px)}
   .xp{grid-template-columns:1fr; gap:2px; padding:9px 0}
-  .xp time{padding-top:0}
-  .news li{grid-template-columns:60px 1fr; gap:10px}
-  .aw{grid-template-columns:38px 1fr; gap:9px}
-  .zone,.crease,.tape{display:none}
-  .dwgti,.dwgno{display:none}
-  .pubbar{flex-wrap:wrap; margin-top:-8px}
-  .pball{margin-left:0; width:100%; margin-top:4px}
-  .titleblock{margin:22px 16px 0}
+  .xp time,.xp .dt{padding-top:0}
+  .news li{grid-template-columns:58px 1fr; gap:10px}
+  .aw{grid-template-columns:40px 1fr; gap:9px}
+  .pubbar{flex-wrap:wrap}
+  .pball{margin-left:auto; width:auto; margin-top:0}
+  .platestrip{display:none}
+  .tb-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tb{border-left:0; padding-left:0}
+  .tb:first-child,.tb.bc{grid-column:1 / -1}
+  .footnote{padding:0 16px 24px}
 }
 </style>
 </head>
 <body>
 
-<nav class="flagdex" aria-label="Section index">
-  <a class="fb" href="#about">About</a>
-  <a class="ft" href="#news">News</a>
-  <a class="fb" href="#publications">Publications</a>
-  <a class="ft" href="#experience">Experience</a>
-  <a class="fb" href="#awards">Archive</a>
-</nav>
+<header class="topbar">
+  <div class="gauge" aria-hidden="true"></div>
+  <div class="in">
+    <a class="wordmark" href="#top"><img class="tava figimg" alt="" data-srcs="figures/avatar.jpg">PEIWEN LI<span> · PL-2026-001</span></a>
+    <nav class="topnav" aria-label="Section index">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+    </nav>
+  </div>
+</header>
 
-<div class="edgebar" aria-hidden="true">
-  <div class="zone zx"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
-  <p class="dwgti mono">Personal index · Rev B</p>
+<div class="sheet" id="top">
+
+<div class="band">
+  <div class="in">
+    <img class="hava figimg" alt="Portrait of Peiwen Li" data-srcs="figures/avatar.jpg">
+    <div class="hmain">
+      <p class="hkick">Ph.D. student · Computer Science · Yale University</p>
+      <h1 class="hname">Peiwen Li</h1>
+      <p class="htag">Building LLM agents that plan, remember, and act.</p>
+      <p class="hadv">Advised by <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> &amp; <a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a> · New Haven, CT&nbsp;·&nbsp;41.31°N</p>
+    </div>
+    <div class="hlinks">
+        <a href="https://scholar.google.com/citations?user=VUl9KFYAAAAJ" target="_blank" rel="noopener">Scholar<span>↗</span></a>
+        <a href="https://github.com/lpwpower" target="_blank" rel="noopener">GitHub<span>↗</span></a>
+        <a href="https://www.linkedin.com/in/peiwen-li-88664226b/" target="_blank" rel="noopener">LinkedIn<span>↗</span></a>
+        <a href="https://orcid.org/0009-0009-8318-2420" target="_blank" rel="noopener">ORCID<span>↗</span></a>
+        <a class="em" href="mailto:peiwen.li@yale.edu">peiwen.li@yale.edu</a>
+      </div>
+  </div>
 </div>
 
-<div class="frame">
-<div class="sheet">
-<span class="regmark rm1"><svg viewBox="0 0 14 14"><path d="M7 0v14 M0 7h14" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>
-<span class="regmark rm2"><svg viewBox="0 0 14 14"><path d="M7 0v14 M0 7h14" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>
-<span class="regmark rm3"><svg viewBox="0 0 14 14"><path d="M7 0v14 M0 7h14" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>
-<span class="regmark rm4"><svg viewBox="0 0 14 14"><path d="M7 0v14 M0 7h14" stroke="currentColor" stroke-width="1" fill="none"/></svg></span>
-<span class="tape tp1" aria-hidden="true"></span>
-<span class="tape tp2" aria-hidden="true"></span>
-<div class="crease" aria-hidden="true"></div>
-<div class="zone zx" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
-<div class="zone zy" aria-hidden="true"><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span></div>
-<p class="dwgti mono">Personal index · Rev B</p>
-<p class="dwgno mono">DWG NO. PL-2026-001</p>
-
-<div class="inner">
-
-<aside class="sidebar">
-  <div class="plate">
-    <div class="ph">
-      <span class="ref">REF. A-01</span>
-      <svg class="cross" viewBox="0 0 40 40" aria-hidden="true" style="position:absolute; width:40px; height:40px; color:var(--ink); opacity:.16">
-        <path d="M20 4v32 M4 20h32" stroke="currentColor" stroke-width=".8" fill="none"/>
-        <circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width=".8" fill="none"/>
-      </svg>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
-        <circle cx="12" cy="9" r="4"/><path d="M4.5 21c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/>
-      </svg>
-      <img class="figimg" alt="Portrait of Peiwen Li" data-srcs="figures/avatar.jpg">
-    </div>
-    <table class="spec">
-      <tr><td>name</td><td>Peiwen Li</td></tr>
-      <tr><td>role</td><td>Ph.D. student, CS</td></tr>
-      <tr><td>inst</td><td>Yale University</td></tr>
-      <tr><td>loc</td><td>New Haven, CT · 41.31°N</td></tr>
-      <tr><td>mail</td><td><a href="mailto:peiwen.li@yale.edu" style="color:inherit;border:0">peiwen.li@yale.edu</a></td></tr>
-    </table>
-  </div>
-  <h1 class="name">Peiwen Li</h1>
-  <p class="sig">Building LLM agents that plan, remember, and act.</p>
-  <p class="sig adv">Advised by <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> &amp; <a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a></p>
-  <nav class="links">
-    <a href="https://scholar.google.com/citations?user=VUl9KFYAAAAJ" target="_blank" rel="noopener">Google Scholar<span class="mono">↗ 01</span></a>
-    <a href="https://github.com/lpwpower" target="_blank" rel="noopener">GitHub<span class="mono">↗ 02</span></a>
-    <a href="https://www.linkedin.com/in/peiwen-li-88664226b/" target="_blank" rel="noopener">LinkedIn<span class="mono">↗ 03</span></a>
-    <a href="https://orcid.org/0009-0009-8318-2420" target="_blank" rel="noopener">ORCID<span class="mono">↗ 04</span></a>
-  </nav>
-</aside>
-
-<main>
+<main class="pad">
 
 <section id="about">
-  <div class="shead"><span class="no">01</span><h2>About</h2><span class="side">SHT 1 · GEN</span></div>
-  <div class="hrule"></div>
-  <div class="bio-grid">
+  <div class="duo">
     <div>
+      <div class="shead"><span class="no">01</span><h2>About</h2><span class="side">GEN</span></div>
       <p>I am a Ph.D. student at Yale CS, co-advised by Professors <b><a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a></b> and <b><a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a></b> in the <a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p>
       <p>My research interests lie at the intersection of <b>LLM agents</b>, <b>multi-agent systems</b>, and <b>efficient LLM adaptation and inference</b> (MoE, LoRA, KV cache), together with memory management and retrieval-augmented generation. Previously I worked on AutoML, OOD generalization, causal discovery, and graph learning, with applications in biochemistry and biomedicine.</p>
       <p>Before Yale, I received my Master's degree from Tsinghua University, advised by Prof. <b><a href="https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm" target="_blank" rel="noopener">Wenwu Zhu</a></b>, and was fortunate to intern with <a href="https://people.csail.mit.edu/rmwu/" target="_blank" rel="noopener">Menghua Wu</a> in the <a href="https://www.rbg.mit.edu/" target="_blank" rel="noopener">Regina Barzilay Group</a> at MIT CSAIL, and also at Alibaba Cloud under the Alibaba Innovative Research Program.</p>
     </div>
-    <figure class="figure">
-      <span class="fkey">DWG 001 · REV B</span>
-      <svg viewBox="0 0 280 224" role="img" aria-label="Technical sketch of a multi-agent system">
-        <ellipse cx="70" cy="56" rx="25" ry="23.5" fill="rgba(43,98,168,.07)" transform="rotate(-4 70 56)"/>
-        <ellipse cx="196" cy="48" rx="20" ry="19" fill="rgba(43,98,168,.07)" transform="rotate(6 196 48)"/>
-        <ellipse cx="138" cy="144" rx="22" ry="21" fill="rgba(23,126,118,.08)" transform="rotate(-6 138 144)"/>
-        <g fill="none" stroke="currentColor" stroke-linecap="round">
-          <ellipse cx="70" cy="56" rx="26" ry="24.5" stroke-width="1.3" transform="rotate(-4 70 56)"/>
-          <ellipse cx="70.8" cy="56.6" rx="24.6" ry="25.6" stroke-width=".5" opacity=".4" transform="rotate(5 70 56)"/>
-          <ellipse cx="196" cy="48" rx="21" ry="20" stroke-width="1.3" transform="rotate(6 196 48)"/>
-          <ellipse cx="196.6" cy="48.6" rx="19.6" ry="21" stroke-width=".5" opacity=".4" transform="rotate(-5 196 48)"/>
-          <ellipse cx="138" cy="144" rx="23" ry="22" stroke-width="1.3" stroke="#177E76" transform="rotate(-6 138 144)"/>
-          <ellipse cx="138.7" cy="144.6" rx="21.6" ry="23" stroke-width=".5" opacity=".4" stroke="#177E76" transform="rotate(4 138 144)"/>
-          <g stroke="#2B62A8" stroke-width=".85" opacity=".75">
-            <path d="M52 66 l10 -12 M56 72 l12 -14 M61 76 l12 -14"/>
-            <path d="M182 58 l9 -11 M187 62 l10 -12"/>
-          </g>
-          <g stroke="#177E76" stroke-width=".85" opacity=".65">
-            <path d="M122 156 l9 -11 M126 161 l11 -13 M132 164 l10 -12"/>
-          </g>
-          <path d="M99 50 C 124 42, 148 40, 172 44" stroke-width="1"/>
-          <path d="M166 39 L 173.5 44.2 L 165.5 48.5" stroke-width="1"/>
-          <path d="M188 70 C 178 96, 166 114, 154 126" stroke-width="1"/>
-          <path d="M154.5 117.5 L 153.4 127 L 161.5 123.5" stroke-width="1"/>
-          <path d="M113 136 C 90 122, 76 100, 68 84" stroke-width="1" stroke-dasharray="4 4"/>
-          <path d="M64.5 92.5 L 67.6 83 L 75.5 88" stroke-width="1"/>
-          <g stroke-width="1">
-            <path d="M226 134 h34 M226 134 v40 h34 v-40 M231 142 h24 M231 149 h24 M231 156 h16" opacity=".85"/>
-            <path d="M223 131 h34 v40" opacity=".35" stroke-width=".6"/>
-          </g>
-          <path d="M162 152 C 184 156, 206 152, 222 146" stroke-width=".9" stroke-dasharray="1.5 4"/>
-          <g stroke="#2B62A8" stroke-width=".9" opacity=".9">
-            <path d="M30 200 h96 M30 196.5 v7 M126 196.5 v7"/>
-          </g>
+    <figure class="hcard aboutcard">
+      <svg viewBox="0 0 340 160" role="img" aria-label="Architecture diagram of a multi-agent system">
+        <g fill="none" stroke="currentColor" stroke-width="1.1">
+          <rect x="28" y="16" width="74" height="32" rx="9"/>
+          <rect x="234" y="16" width="74" height="32" rx="9"/>
+          <rect x="128" y="92" width="74" height="32" rx="9"/>
+          <path d="M262 106 h46 v34 h-46 z" opacity=".9"/>
+          <path d="M269 115 h32 M269 122 h32 M269 129 h21" stroke-width=".8" opacity=".6"/>
         </g>
-        <g font-family="Geist Mono,monospace" font-size="8" fill="#486073" letter-spacing=".08em">
-          <text x="70" y="59" text-anchor="middle">PLAN</text>
-          <text x="196" y="51" text-anchor="middle">ACT</text>
-          <text x="138" y="147" text-anchor="middle">CRITIC</text>
-          <text x="243" y="186" text-anchor="middle">NOTES</text>
-          <text x="118" y="34" text-anchor="middle" opacity=".8">delegate</text>
-          <text x="196" y="106" text-anchor="middle" opacity=".8">verify</text>
-          <text x="72" y="116" text-anchor="middle" opacity=".8">remember</text>
-          <text x="78" y="214" text-anchor="middle" fill="#2B62A8">96 UNITS</text>
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <path d="M102 32 H 228"/>
+          <path d="M222 28 l7 4 -7 4" fill="none"/>
+          <path d="M268 48 C 262 72, 236 90, 208 100"/>
+          <path d="M216 94 l-8.6 6.4 3 -10"/>
+        </g>
+        <g fill="none" stroke="#1F7BF0" stroke-width="1">
+          <path d="M128 102 C 88 94, 66 72, 62 50" stroke-dasharray="4 4"/>
+          <path d="M58 58 l4 -9 6 8" fill="none"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width=".9" opacity=".55">
+          <path d="M202 112 C 224 116, 240 118, 256 120" stroke-dasharray="1.5 4"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="102" cy="32" r="1.6"/><circle cx="268" cy="48" r="1.6"/><circle cx="128" cy="102" r="1.6"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width=".9" opacity=".8">
+          <path d="M28 146 h86 M28 142 v8 M114 142 v8"/>
+        </g>
+        <g font-family="Geist Mono,monospace" font-size="10" fill="#27567F" letter-spacing=".1em">
+          <text x="65" y="35.5" text-anchor="middle">PLAN</text>
+          <text x="271" y="35.5" text-anchor="middle">ACT</text>
+          <text x="165" y="111.5" text-anchor="middle">CRITIC</text>
+          <text x="285" y="152" text-anchor="middle">NOTES</text>
+        </g>
+        <g font-family="Geist Mono,monospace" font-size="8.5" fill="#7188A3" letter-spacing=".08em">
+          <text x="165" y="25" text-anchor="middle">DELEGATE</text>
+          <text x="248" y="76" text-anchor="middle">VERIFY</text>
+          <text x="72" y="84" text-anchor="middle" fill="#1F7BF0">REMEMBER</text>
+          <text x="71" y="158" text-anchor="middle">96 UNITS</text>
         </g>
       </svg>
-      <figcaption>Fig. 1 — a small society of agents.<span class="plate-no">Plate 01 · Multi-agent memo</span></figcaption>
+      <figcaption class="hcap"><em>Fig. 1 — a small society of agents.</em></figcaption>
     </figure>
   </div>
 </section>
 
 <section id="news">
-  <div class="shead"><span class="no">02</span><h2>News</h2><span class="side">SHT 2 · LOG</span></div>
-  <div class="hrule"></div>
-  <ol class="news">
-    <li><time>2026.07</time><p>Two papers accepted to KDD 2026: <a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3818131" target="_blank" rel="noopener">NumCache</a> and <a href="https://arxiv.org/pdf/2602.07294" target="_blank" rel="noopener">Fin-RATE</a>.</p></li>
-    <li><time>2026.05</time><p>MoRSE is now on <a href="https://arxiv.org/abs/2608.09251" target="_blank" rel="noopener">arXiv</a> &mdash; our task-oriented multi-agent system with a mixture of role-subtask experts, specializing agents at both the task-structure and parameter levels for complex, long-horizon coding tasks.</p></li>
-    <li><time>2025.08</time><p>Started my Ph.D. at Yale, joining the <a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and the <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p></li>
-  </ol>
-  <details class="newsarch">
-    <summary>Earlier entries · pre-Ph.D. <span aria-hidden="true">+</span></summary>
-    <ol class="news">
-      <li><time>2025.06</time><p>Received my Master's degree from Tsinghua University.</p></li>
-      <li><time>2025.05</time><p>CARNAS was accepted to KDD 2025.</p></li>
-      <li><time>2024.10</time><p>One paper accepted to the NeurIPS 2024 AIDrugX workshop, from my internship at MIT CSAIL.</p></li>
-    </ol>
-  </details>
+      <div class="shead"><span class="no">02</span><h2>News</h2><span class="side">LOG</span></div>
+      <ol class="news">
+        <li><time datetime="2026-07">2026.07</time><p>Two papers accepted to KDD 2026: <a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3818131" target="_blank" rel="noopener">NumCache</a>&nbsp;and&nbsp;<a href="https://arxiv.org/pdf/2602.07294" target="_blank" rel="noopener">Fin-RATE</a>.</p></li>
+        <li><time datetime="2026-05">2026.05</time><p>MoRSE is now on <a href="https://arxiv.org/abs/2608.09251" target="_blank" rel="noopener">arXiv</a> &mdash; our task-oriented multi-agent system with a mixture of role-subtask experts, specializing agents at both the task-structure and parameter levels for complex, long-horizon coding tasks.</p></li>
+        <li><time datetime="2025-08">2025.08</time><p>Started my Ph.D. at Yale, joining the <a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and the <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p></li>
+      </ol>
+      <details class="newsarch">
+        <summary>Earlier entries · pre-Ph.D. <span aria-hidden="true">+</span></summary>
+        <ol class="news">
+          <li><time datetime="2025-06">2025.06</time><p>Received my Master's degree from Tsinghua University.</p></li>
+          <li><time datetime="2025-05">2025.05</time><p>CARNAS was accepted to KDD 2025.</p></li>
+          <li><time datetime="2024-10">2024.10</time><p>One paper accepted to the NeurIPS 2024 AIDrugX workshop, from my internship at MIT CSAIL.</p></li>
+        </ol>
+      </details>
 </section>
 
 <section id="publications">
-  <div class="shead"><span class="no">03</span><h2>Publications</h2><span class="side">SHT 3 · IDX 07</span></div>
-  <div class="hrule"></div>
+  <div class="shead"><span class="no">03</span><h2>Publications</h2><span class="side">IDX 07</span></div>
   <div class="pubbar">
     <span class="pblabel">Sort by</span>
-    <button class="pbtn active" data-sort="year">Year</button>
-    <button class="pbtn" data-sort="author">First-author</button>
+    <button type="button" class="pbtn active" data-sort="year" aria-pressed="true">Year</button>
+    <button type="button" class="pbtn" data-sort="author" aria-pressed="false">First-author</button>
     <a class="pball" href="https://scholar.google.com/citations?user=VUl9KFYAAAAJ" target="_blank" rel="noopener">Full index &middot; Google Scholar &#8599;</a>
   </div>
   <div class="publist">
 
   <div class="pub" data-fa="1">
-    <div class="thumb"><span class="fno">F.02</span><img class="figimg" alt="" data-srcs="figures/morse.png|https://arxiv.org/html/2608.09251v1/x5.png">
+    <div class="thumb"><span class="fno">F.02</span><img class="figimg" alt="" data-srcs="figures/morse.png">
     <svg viewBox="0 0 64 64" aria-hidden="true" width="100%">
       <g fill="none" stroke="currentColor" stroke-linecap="round">
-        <ellipse cx="20" cy="18" rx="9.5" ry="9" stroke-width="1.2" transform="rotate(-5 20 18)"/>
-        <ellipse cx="46" cy="22" rx="8" ry="8.5" stroke-width="1.2" transform="rotate(6 46 22)"/>
-        <ellipse cx="32" cy="46" rx="9" ry="8.5" stroke-width="1.2" transform="rotate(-4 32 46)"/>
+        <ellipse cx="20" cy="18" rx="9.5" ry="9" stroke-width="1.2"/>
+        <ellipse cx="46" cy="22" rx="8" ry="8.5" stroke-width="1.2"/>
+        <ellipse cx="32" cy="46" rx="9" ry="8.5" stroke-width="1.2"/>
         <path d="M29 16 C 34 14.5, 36 15.5, 38.5 18" stroke-width=".9"/>
         <path d="M43 30 C 40 35, 38 38, 36 40" stroke-width=".9"/>
         <path d="M24 40 C 21 34, 20 30, 19.5 27" stroke-width=".9" stroke-dasharray="3 3"/>
-        <g stroke="#2B62A8" stroke-width=".7" opacity=".7"><path d="M14 22 l5 -6 M17 24 l5 -6"/></g>
-        <path d="M52 48 v7 M48.5 51.5 h7" stroke="#2B62A8" stroke-width=".9" opacity=".8"/>
+        <path d="M52 48 v7 M48.5 51.5 h7" stroke="#1F7BF0" stroke-width=".9" opacity=".8"/>
       </g>
     </svg></div>
     <div>
       <h3>MoRSE: Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts</h3>
-      <p class="au"><u>Peiwen Li</u>, Shiyang Zhang, Yangtian Zhang, Sizhuang He, David van Dijk, Rex Ying</p>
-      <div class="meta"><span class="vtag">arXiv 2026</span><span class="stamp">Under review</span><a href="https://arxiv.org/pdf/2608.09251" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/MoRSE" target="_blank" rel="noopener">Code</a></div>
+      <p class="au"><u>Peiwen Li</u>, Shiyang Zhang, Yangtian Zhang, Sizhuang He, David van Dijk, Rex&nbsp;Ying</p>
+      <div class="meta"><span class="vtag">arXiv 2026</span><span class="stamp">Under review</span><span class="lks"><a href="https://arxiv.org/pdf/2608.09251" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/MoRSE" target="_blank" rel="noopener">Code</a></span></div>
     </div>
   </div>
 
@@ -467,34 +417,34 @@ p b{font-weight:500; color:var(--ink)}
         <ellipse cx="26" cy="16" rx="13" ry="4.5" stroke-width="1.2"/>
         <path d="M13 16 v22 c0 2.6 5.8 4.6 13 4.6 s13 -2 13 -4.6 v-22" stroke-width="1.2"/>
         <path d="M13 27 c0 2.6 5.8 4.6 13 4.6 s13 -2 13 -4.6" stroke-width=".8" opacity=".6"/>
-        <path d="M48 24 l8 0 M53 20.5 l3.5 3.5 -3.5 3.5" stroke="#2B62A8" stroke-width="1"/>
-        <path d="M48 34 l8 0 M53 30.5 l3.5 3.5 -3.5 3.5" stroke="#2B62A8" stroke-width="1" opacity=".55"/>
+        <path d="M48 24 l8 0 M53 20.5 l3.5 3.5 -3.5 3.5" stroke="#1F7BF0" stroke-width="1"/>
+        <path d="M48 34 l8 0 M53 30.5 l3.5 3.5 -3.5 3.5" stroke="#1F7BF0" stroke-width="1" opacity=".55"/>
       </g>
       <g font-family="Geist Mono,monospace" font-size="7.5" fill="currentColor"><text x="26" y="27" text-anchor="middle">1.07</text><text x="26" y="37" text-anchor="middle" opacity=".6">42%</text></g>
     </svg></div>
     <div>
       <h3>NumCache: Number-Preserving KV Cache Compression with Contrastive Retrieval for Financial Document QA</h3>
-      <p class="au">Eftychia Makri, <u>Peiwen Li</u>, Yidong Jiang, Junrong Chen, Jialin Chen, Ali Maatouk, Leandros Tassiulas, Eliot Brenner, Bing Xiang, Rex Ying</p>
-      <div class="meta"><span class="vtag">KDD 2026</span><a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3818131" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/eftymakr/NumCache" target="_blank" rel="noopener">Code</a></div>
+      <p class="au">Eftychia Makri, <u>Peiwen Li</u>, Yidong Jiang, Junrong Chen, Jialin Chen, Ali Maatouk, Leandros Tassiulas, Eliot Brenner, Bing Xiang, Rex&nbsp;Ying</p>
+      <div class="meta"><span class="vtag">KDD 2026</span><span class="lks"><a href="https://dl.acm.org/doi/pdf/10.1145/3770855.3818131" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/eftymakr/NumCache" target="_blank" rel="noopener">Code</a></span></div>
     </div>
   </div>
 
   <div class="pub" data-fa="0">
-    <div class="thumb"><span class="fno">F.04</span><img class="figimg" alt="" data-srcs="figures/finrate.png|https://arxiv.org/html/2602.07294v4/x2.png">
+    <div class="thumb"><span class="fno">F.04</span><img class="figimg" alt="" data-srcs="figures/finrate.png">
     <svg viewBox="0 0 64 64" aria-hidden="true" width="100%">
       <g fill="none" stroke="currentColor" stroke-linecap="round">
         <path d="M16 10 h26 l8 8 v36 h-34 z" stroke-width="1.2"/>
         <path d="M42 10 v8 h8" stroke-width="1"/>
         <path d="M22 22 h18 M22 28 h20" stroke-width=".8" opacity=".55"/>
-        <path d="M21 46 C 26 44, 28 38, 33 40 S 41 34, 45 30" stroke="#2B62A8" stroke-width="1.2"/>
-        <path d="M45 30 l-4.5 .8 M45 30 l-.5 4.4" stroke="#2B62A8" stroke-width="1"/>
+        <path d="M21 46 C 26 44, 28 38, 33 40 S 41 34, 45 30" stroke="#1F7BF0" stroke-width="1.2"/>
+        <path d="M45 30 l-4.5 .8 M45 30 l-.5 4.4" stroke="#1F7BF0" stroke-width="1"/>
         <path d="M21 50 h24" stroke-width=".7" opacity=".4"/>
       </g>
     </svg></div>
     <div>
       <h3>Fin-RATE: A Real-world Financial Analytics and Tracking Evaluation Benchmark for LLMs on SEC Filings</h3>
-      <p class="au">Yidong Jiang, Junrong Chen, Eftychia Makri, Jialin Chen, <u>Peiwen Li</u>, Ali Maatouk, Leandros Tassiulas, Eliot Brenner, Bing Xiang, Rex Ying</p>
-      <div class="meta"><span class="vtag">KDD 2026</span><a href="https://arxiv.org/pdf/2602.07294" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/jyd777/Fin-RATE" target="_blank" rel="noopener">Code</a><span>·</span><a href="https://huggingface.co/datasets/GGLabYale/Fin-RATE" target="_blank" rel="noopener">Dataset</a></div>
+      <p class="au">Yidong Jiang, Junrong Chen, Eftychia Makri, Jialin Chen, <u>Peiwen Li</u>, Ali Maatouk, Leandros Tassiulas, Eliot Brenner, Bing Xiang, Rex&nbsp;Ying</p>
+      <div class="meta"><span class="vtag">KDD 2026</span><span class="lks"><a href="https://arxiv.org/pdf/2602.07294" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/jyd777/Fin-RATE" target="_blank" rel="noopener">Code</a><span>·</span><a href="https://huggingface.co/datasets/GGLabYale/Fin-RATE" target="_blank" rel="noopener">Dataset</a></span></div>
     </div>
   </div>
 
@@ -506,18 +456,18 @@ p b{font-weight:500; color:var(--ink)}
         <circle cx="18" cy="34" r="5" stroke-width="1.2"/>
         <circle cx="46" cy="34" r="5" stroke-width="1.2"/>
         <circle cx="12" cy="53" r="4.5" stroke-width="1" opacity=".55"/>
-        <circle cx="26" cy="53" r="4.5" stroke-width="1.2" stroke="#177E76"/>
+        <circle cx="26" cy="53" r="4.5" stroke-width="1.2" stroke="#1F7BF0"/>
         <path d="M28.5 17.5 L 21 29.5 M35.5 17.5 L 43 29.5" stroke-width="1"/>
         <path d="M15.5 38.5 L 13 48.5 M21 38.5 L 24.5 48.5" stroke-width="1"/>
-        <path d="M21 38.5 L 24.5 48.5" stroke="#177E76" stroke-width="1.4"/>
-        <path d="M28.5 17.5 L 21 29.5" stroke="#177E76" stroke-width="1.4"/>
+        <path d="M21 38.5 L 24.5 48.5" stroke="#1F7BF0" stroke-width="1.4"/>
+        <path d="M28.5 17.5 L 21 29.5" stroke="#1F7BF0" stroke-width="1.4"/>
         <path d="M40 51 q3 -4 8 -4" stroke-width=".8" stroke-dasharray="2 3" opacity=".6"/>
       </g>
     </svg></div>
     <div>
       <h3>Causal-aware Graph Neural Architecture Search under Distribution Shifts</h3>
-      <p class="au"><u>Peiwen Li</u>, Xin Wang, Zeyang Zhang, Ziwei Zhang, Fang Shen, Jialong Wang, Yang Li, Wenwu Zhu</p>
-      <div class="meta"><span class="vtag">KDD 2025</span><a href="https://arxiv.org/pdf/2405.16489" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/CARNAS" target="_blank" rel="noopener">Code</a></div>
+      <p class="au"><u>Peiwen Li</u>, Xin Wang, Zeyang Zhang, Ziwei Zhang, Fang Shen, Jialong Wang, Yang Li, Wenwu&nbsp;Zhu</p>
+      <div class="meta"><span class="vtag">KDD 2025</span><span class="lks"><a href="https://arxiv.org/pdf/2405.16489" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/CARNAS" target="_blank" rel="noopener">Code</a></span></div>
     </div>
   </div>
 
@@ -531,13 +481,13 @@ p b{font-weight:500; color:var(--ink)}
         <circle cx="33" cy="51" r="3.5" stroke-width="1"/>
         <circle cx="50" cy="44" r="3.5" stroke-width="1"/>
         <path d="M18 45 L 29.5 50 M36.5 50 L 46.5 45.5 M32 34 L 32.6 47.5 M29 26.5 L 17 44" stroke-width=".9"/>
-        <path d="M32 34 L 32.6 47.5" stroke="#177E76" stroke-width="1.3"/>
+        <path d="M32 34 L 32.6 47.5" stroke="#1F7BF0" stroke-width="1.3"/>
       </g>
     </svg></div>
     <div>
       <h3>Learning to Refine Domain Knowledge for Biological Network Inference</h3>
-      <p class="au"><u>Peiwen Li</u>, Menghua Wu</p>
-      <div class="meta"><span class="vtag" title="NeurIPS 2024 Workshop on AI for New Drug Modalities">NeurIPS 2024 · AIDrugX Workshop</span><a href="https://arxiv.org/pdf/2410.14436" target="_blank" rel="noopener">PDF</a></div>
+      <p class="au"><u>Peiwen Li</u>, Menghua&nbsp;Wu</p>
+      <div class="meta"><span class="vtag" title="NeurIPS 2024 Workshop on AI for New Drug Modalities">NeurIPS 2024 · AIDrugX</span><span class="lks"><a href="https://arxiv.org/pdf/2410.14436" target="_blank" rel="noopener">PDF</a></span></div>
     </div>
   </div>
 
@@ -549,120 +499,134 @@ p b{font-weight:500; color:var(--ink)}
         <path d="M50 39 L 56.5 42.8 L 50 46.5" stroke-width="1.1"/>
         <path d="M18 44 v-7 M32 44 v-7 M45 44 v-7" stroke-width="1"/>
         <circle cx="18" cy="34" r="2.6" stroke-width="1"/>
-        <circle cx="32" cy="34" r="2.6" stroke-width="1" stroke="#2B62A8"/>
+        <circle cx="32" cy="34" r="2.6" stroke-width="1" stroke="#1F7BF0"/>
         <circle cx="45" cy="34" r="2.6" stroke-width="1"/>
-        <path d="M28 22 l8 0 M32 18 l0 8" stroke="#2B62A8" stroke-width="1" opacity=".8"/>
+        <path d="M28 22 l8 0 M32 18 l0 8" stroke="#1F7BF0" stroke-width="1" opacity=".8"/>
         <path d="M14 54 h36" stroke-width=".6" opacity=".35"/>
       </g>
     </svg></div>
     <div>
       <h3>RealTCD: Temporal Causal Discovery from Interventional Data with Large Language Model</h3>
-      <p class="au"><u>Peiwen Li</u>, Xin Wang, Zeyang Zhang, Yuan Meng, Fang Shen, Yue Li, Jialong Wang, Yang Li, Wenwu Zhu</p>
-      <div class="meta"><span class="vtag">CIKM 2024</span><a href="https://arxiv.org/pdf/2404.14786" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/RealTCD_CIKM" target="_blank" rel="noopener">Code</a></div>
+      <p class="au"><u>Peiwen Li</u>, Xin Wang, Zeyang Zhang, Yuan Meng, Fang Shen, Yue Li, Jialong Wang, Yang Li, Wenwu&nbsp;Zhu</p>
+      <div class="meta"><span class="vtag">CIKM 2024</span><span class="lks"><a href="https://arxiv.org/pdf/2404.14786" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/RealTCD_CIKM" target="_blank" rel="noopener">Code</a></span></div>
     </div>
   </div>
 
   <div class="pub" data-fa="1">
-    <div class="thumb"><span class="fno">F.08</span><img class="figimg" alt="" data-srcs="figures/tecdi.png">
+    <div class="thumb"><span class="fno">F.08</span>
     <svg viewBox="0 0 64 64" aria-hidden="true" width="100%">
       <g fill="none" stroke="currentColor" stroke-linecap="round">
         <path d="M10 40 C 24 38.8, 42 39.6, 55 39" stroke-width="1.2"/>
         <path d="M49 35.5 L 55.5 39 L 49 42.6" stroke-width="1.1"/>
         <circle cx="20" cy="39.5" r="2.4" stroke-width="1"/>
         <circle cx="37" cy="39.3" r="2.4" stroke-width="1"/>
-        <path d="M34 24 l6.5 11 M40.5 24 l-6.5 11" stroke="#2B62A8" stroke-width="1.1"/>
+        <path d="M34 24 l6.5 11 M40.5 24 l-6.5 11" stroke="#1F7BF0" stroke-width="1.1"/>
         <path d="M37 47 q-5 5 -12 5 M37 47 q5 5 12 5" stroke-width=".8" stroke-dasharray="2 3" opacity=".6"/>
       </g>
     </svg></div>
     <div>
       <h3>Causal Discovery in Temporal Domain from Interventional Data</h3>
-      <p class="au"><u>Peiwen Li</u>, Yuan Meng, Xin Wang, Fang Shen, Yue Li, Jialong Wang, Wenwu Zhu</p>
-      <div class="meta"><span class="vtag">CIKM 2023</span><a href="https://dl.acm.org/doi/pdf/10.1145/3583780.3615177" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/TECDI" target="_blank" rel="noopener">Code</a></div>
+      <p class="au"><u>Peiwen Li</u>, Yuan Meng, Xin Wang, Fang Shen, Yue Li, Jialong Wang, Wenwu&nbsp;Zhu</p>
+      <div class="meta"><span class="vtag">CIKM 2023</span><span class="lks"><a href="https://dl.acm.org/doi/pdf/10.1145/3583780.3615177" target="_blank" rel="noopener">PDF</a><span>·</span><a href="https://github.com/lpwpower/TECDI" target="_blank" rel="noopener">Code</a></span></div>
     </div>
   </div>
   </div>
-  <div class="platestrip" aria-hidden="true">
-  <span class="pslabel">Plates F.02&ndash;F.08 &middot; field sketches</span>
-  <span class="psrow" id="psrow"></span>
-</div>
+  <div class="platestrip">
+    <span class="pslabel">F.02&ndash;F.08 &middot; field sketches</span>
+    <span class="psrow" id="psrow"></span>
+  </div>
 </section>
 
 <section id="experience">
-  <div class="shead"><span class="no">04</span><h2>Experience</h2><span class="side">SHT 4 · REC</span></div>
-  <div class="hrule"></div>
-  <div class="xplist">
-  <div class="xp"><time>2025.08 — now</time><div><h3>Yale University · Graduate Research Assistant</h3><p><a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>, with Prof. <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> and Prof. <a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a>.</p></div></div>
-  <div class="xp"><time>2024.05 — 2024.11</time><div><h3>MIT CSAIL · Research Intern</h3><p><a href="https://www.rbg.mit.edu/" target="_blank" rel="noopener">Regina Barzilay group</a>, with <a href="https://people.csail.mit.edu/rmwu/" target="_blank" rel="noopener">Menghua Wu</a> — amortized inference for biological network inference.</p></div></div>
-  <div class="xp"><time>2021.11 — 2025.06</time><div><h3>Tsinghua University · Graduate Research Assistant</h3><p>Multimedia and Network Big Data Lab, with Prof. <a href="https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm" target="_blank" rel="noopener">Wenwu Zhu</a> and Prof. <a href="http://mn.cs.tsinghua.edu.cn/xinwang/" target="_blank" rel="noopener">Xin Wang</a>.</p></div></div>
-  <div class="xp"><time>2023.05 — 2023.12</time><div><h3>Alibaba Cloud · Research Intern</h3><p>Alibaba Innovative Research Program — causal-discovery-based anomaly detection for AIOps.</p></div></div>
-  </div>
-</section>
-
-<section id="awards">
-  <div class="shead"><span class="no">05</span><h2>Awards &amp; service</h2><span class="side">SHT 5 · APP</span></div>
-  <div class="hrule"></div>
-  <div class="two">
+  <div class="duo duo-even">
     <div>
-      <div class="aw"><time>23·24</time><span>Comprehensive Excellence Scholarship, Tsinghua University</span></div>
-      <div class="aw"><time>2022</time><span>Outstanding Graduate Award of Beijing (top 4%)</span></div>
-      <div class="aw"><time>2021</time><span>Merit Student of Beijing (top 1%)</span></div>
-      <div class="aw"><time>2020</time><span>Meritorious Winner, MCM/ICM (Interdisciplinary Contest in Modeling)</span></div>
-      <div class="aw"><time>19·20</time><span>Second Prize, National Mathematics Competition for Undergraduates</span></div>
+      <div class="shead"><span class="no">04</span><h2>Experience</h2><span class="side">REC</span></div>
+      <div class="xplist">
+      <div class="xp"><span class="dt">2025.08 — now</span><div><h3>Yale University · Graduate Research Assistant</h3><p><a href="https://graph-and-geometric-learning.github.io/" target="_blank" rel="noopener">Graph &amp; Geometric Learning Lab</a> and <a href="https://www.vandijklab.org/" target="_blank" rel="noopener">van Dijk Lab</a>.</p><p>With Prof. <a href="https://scholar.google.com/citations?user=6fqNXooAAAAJ" target="_blank" rel="noopener">Rex Ying</a> and Prof.&nbsp;<a href="https://scholar.google.com/citations?user=fjjZr6UAAAAJ" target="_blank" rel="noopener">David van Dijk</a>.</p></div></div>
+      <div class="xp"><span class="dt">2024.05 — 2024.11</span><div><h3>MIT CSAIL · Research Intern</h3><p><a href="https://www.rbg.mit.edu/" target="_blank" rel="noopener">Regina Barzilay group</a>, with <a href="https://people.csail.mit.edu/rmwu/" target="_blank" rel="noopener">Menghua Wu</a>.</p><p>Amortized inference for biological&nbsp;network&nbsp;inference.</p></div></div>
+      <div class="xp"><span class="dt">2021.11 — 2025.06</span><div><h3>Tsinghua University · Graduate Research Assistant</h3><p>Multimedia and Network Big Data Lab.</p><p>With Prof. <a href="https://www.cs.tsinghua.edu.cn/csen/info/1306/4336.htm" target="_blank" rel="noopener">Wenwu Zhu</a> and Prof. <a href="http://mn.cs.tsinghua.edu.cn/xinwang/" target="_blank" rel="noopener">Xin Wang</a>.</p></div></div>
+      <div class="xp"><span class="dt">2023.05 — 2023.12</span><div><h3>Alibaba Cloud · Research Intern</h3><p>Alibaba Innovative Research Program.</p><p>Causal-discovery-based anomaly detection for&nbsp;AIOps.</p></div></div>
+      </div>
     </div>
-    <div>
-      <p class="svc" style="margin-top:7px"><b>Conference reviewer</b> — NeurIPS, ACM SIGKDD, ACM MM</p>
-      <p class="svc"><b>Journal reviewer</b> — IEEE TPAMI, Pattern Recognition</p>
+    <div id="awards">
+      <div class="shead"><span class="no">05</span><h2>Awards &amp; service</h2><span class="side">APP</span></div>
+      <div class="aw"><span class="dt">23·24</span><span>Comprehensive Excellence Scholarship, Tsinghua&nbsp;University</span></div>
+      <div class="aw"><time datetime="2022">2022</time><span>Outstanding Graduate Award of Beijing (top 4%)</span></div>
+      <div class="aw"><time datetime="2021">2021</time><span>Merit Student of Beijing (top 1%)</span></div>
+      <div class="aw"><time datetime="2020">2020</time><span>Meritorious Winner, MCM/ICM (Interdisciplinary Contest&nbsp;in&nbsp;Modeling)</span></div>
+      <div class="aw"><span class="dt">19·20</span><span>Second Prize, National Mathematics Competition for&nbsp;Undergraduates</span></div>
+      <div class="svcbox">
+        <p class="svc"><b>Conference reviewer</b> — NeurIPS, ACM SIGKDD, ACM MM</p>
+        <p class="svc"><b>Journal reviewer</b> — IEEE TPAMI, Pattern Recognition</p>
+      </div>
     </div>
   </div>
 </section>
 
 </main>
-</div>
 
 <div class="titleblock">
-  <div class="tb"><span class="k">project</span><span class="v">PEIWEN LI — PERSONAL INDEX</span></div>
-  <div class="tb"><span class="k">drawn by</span><span class="v">P. LI</span></div>
-  <div class="tb"><span class="k">sheet</span><span class="v">01 / 01</span></div>
-  <div class="tb"><span class="k">scale</span><span class="v">1 : 1</span></div>
-  <div class="tb"><span class="k">revision</span><span class="v">2026.08 · REV B</span></div>
-  <div class="tb bc"><span class="k">doc</span>
-    <span class="ctest" aria-hidden="true"><i style="background:#2B62A8"></i><i style="background:#177E76"></i><i style="background:#B5482A"></i><i style="background:#182838"></i><i style="background:#B9C8D4"></i></span>
-    <svg viewBox="0 0 60 15" preserveAspectRatio="none" aria-hidden="true">
-      <g fill="currentColor">
-        <rect x="1" width="2" height="15"/><rect x="5" width="1" height="15"/><rect x="8" width="3" height="15"/>
-        <rect x="13" width="1" height="15"/><rect x="16" width="2" height="15"/><rect x="21" width="1" height="15"/>
-        <rect x="24" width="3" height="15"/><rect x="29" width="1" height="15"/><rect x="32" width="1" height="15"/>
-        <rect x="36" width="2" height="15"/><rect x="40" width="3" height="15"/><rect x="45" width="1" height="15"/>
-        <rect x="48" width="2" height="15"/><rect x="52" width="1" height="15"/><rect x="55" width="2" height="15"/>
-      </g>
-    </svg>
+  <div class="tb-grid">
+    <div class="tb"><span class="k">project</span><span class="v">PEIWEN LI — PERSONAL INDEX</span></div>
+    <div class="tb"><span class="k">drawn by</span><span class="v">P. LI</span></div>
+    <div class="tb"><span class="k">sheet</span><span class="v">01 / 01</span></div>
+    <div class="tb"><span class="k">scale</span><span class="v">1 : 1</span></div>
+    <div class="tb"><span class="k">revision</span><span class="v">2026.08 · REV D</span></div>
+    <div class="tb bc"><span class="k">doc</span><span class="v">PL-2026-001</span>
+      <span class="ctest" aria-hidden="true"><i style="background:#121212"></i><i style="background:#4D4D4D"></i><i style="background:#CDD0C8"></i><i style="background:#1F7BF0"></i><i style="background:#ECECEC"></i></span>
+    </div>
   </div>
 </div>
 <div class="sheetfoot"></div>
 
 </div>
+
+<div class="footnote">
+  <span>© 2026 Peiwen Li · Built by hand, no framework</span>
+  <span>lpwpower.github.io</span>
 </div>
+
 <script>
 (function(){
-  var tabs={};
-  document.querySelectorAll('.flagdex a').forEach(function(a){tabs[a.getAttribute('href').slice(1)]=a});
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        document.querySelectorAll('.flagdex a').forEach(function(x){x.classList.remove('active')});
-        var t=tabs[e.target.id]; if(t)t.classList.add('active');
-      }
-    });
-  },{rootMargin:'-25% 0px -65% 0px'});
-  document.querySelectorAll('main section').forEach(function(sec){io.observe(sec)});
+  var tb=document.querySelector('.topbar'), band=document.querySelector('.band');
+  if(tb&&band&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      es.forEach(function(e){ tb.classList.toggle('scrolled', !e.isIntersecting) });
+    },{rootMargin:'-52px 0px 0px 0px'}).observe(band);
+  }
+}());
+(function(){
+  var g=document.querySelector('.gauge');
+  if(g){
+    var t2=false;
+    function gp(){ t2=false; var m=document.documentElement.scrollHeight-innerHeight;
+      g.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):0)+')' }
+    addEventListener('scroll',function(){ if(!t2){t2=true; requestAnimationFrame(gp)} },{passive:true});
+    addEventListener('resize',gp); gp();
+  }
+}());
+(function(){
+  var ids=['about','news','publications','experience','awards'], links={};
+  document.querySelectorAll('.topnav a').forEach(function(a){links[a.getAttribute('href').slice(1)]=a});
+  var els=ids.map(function(id){return document.getElementById(id)}).filter(Boolean);
+  var tick=false;
+  function upd(){
+    tick=false;
+    var line=innerHeight*.3, cur=els[0];
+    els.forEach(function(el){ if(el.getBoundingClientRect().top<=line) cur=el });
+    ids.forEach(function(id){ var l=links[id]; if(l) l.classList.toggle('active', cur&&cur.id===id) });
+  }
+  addEventListener('scroll',function(){ if(!tick){tick=true; requestAnimationFrame(upd)} },{passive:true});
+  addEventListener('resize',upd); upd();
 }());
 (function(){
   var row=document.getElementById('psrow');
   document.querySelectorAll('.publist .pub').forEach(function(pub){
     var svg=pub.querySelector('.thumb > svg'); if(!svg||!row) return;
-    var cell=document.createElement('span');
+    var cell=document.createElement('button'); cell.type='button';
     cell.appendChild(svg.cloneNode(true));
     cell.title=(pub.querySelector('h3')||{textContent:''}).textContent.split(':')[0];
+    cell.setAttribute('aria-label','Go to '+cell.title);
     cell.addEventListener('click',function(){pub.scrollIntoView({behavior:'smooth',block:'center'})});
     row.appendChild(cell);
   });
@@ -672,8 +636,8 @@ p b{font-weight:500; color:var(--ink)}
   var orig=[].slice.call(list.querySelectorAll('.pub'));
   document.querySelectorAll('.pbtn').forEach(function(b){
     b.addEventListener('click',function(){
-      document.querySelectorAll('.pbtn').forEach(function(x){x.classList.remove('active')});
-      b.classList.add('active');
+      document.querySelectorAll('.pbtn').forEach(function(x){x.classList.remove('active'); x.setAttribute('aria-pressed','false')});
+      b.classList.add('active'); b.setAttribute('aria-pressed','true');
       var items=orig.slice();
       if(b.dataset.sort==='author'){
         items.sort(function(a,x){return (+x.dataset.fa||0)-(+a.dataset.fa||0)});
@@ -682,16 +646,14 @@ p b{font-weight:500; color:var(--ink)}
     });
   });
 }());
-(function(){
-  var eb=document.querySelector('.edgebar'), sh=document.querySelector('.sheet');
-  function upd(){ eb.classList.toggle('on', sh.getBoundingClientRect().top<=0) }
-  addEventListener('scroll',upd,{passive:true}); addEventListener('resize',upd); upd();
-}());
 document.querySelectorAll('.figimg').forEach(function(im){
   var list=im.dataset.srcs.split('|'), i=0;
   function next(){ if(i>=list.length){ im.remove(); return } im.src=list[i++] }
   im.onerror=next;
-  im.onload=function(){ im.style.display='block' };
+  im.onload=function(){
+    im.style.display='block';
+    var t=im.closest('.thumb'); if(t)t.classList.add('has-img');
+  };
   next();
 });
 </script>
